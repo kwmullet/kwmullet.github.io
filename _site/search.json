@@ -11,7 +11,7 @@
     "href": "index.html#overview",
     "title": "Introduction to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\n\n\n\n\n\nTLDR: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file.\n\n\n\n\n\n\n\nWhat is R Markdown, and a brief version of how we got here from Donald Knuth’s idea of Literate Programming and TeX."
+    "text": "Overview:\n\n\n\n\n\n\n\nTLDR: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file."
   },
   {
     "objectID": "index.html#overview-cont.",
@@ -95,14 +95,14 @@
     "href": "index.html#tables-of-contents",
     "title": "Introduction to R Markdown",
     "section": "Tables of contents",
-    "text": "Tables of contents"
+    "text": "Tables of contents\nIf you modify your YAML header like this…\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: \n  html_document:\n    toc: true\n    toc_depth: 2\n---"
   },
   {
     "objectID": "index.html#citations",
     "href": "index.html#citations",
     "title": "Introduction to R Markdown",
     "section": "Citations",
-    "text": "Citations\nUsing citations and references Citations using DOIs, BibTex format, or integration with Zotero"
+    "text": "Citations\nTo use citations and automatically generate a Works Cited at the end of the document, you can change your YAML like this. This isn’t the only approach, but this is what I’ve used.\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: \n  html_document:\n    toc: true\n    toc_depth: 2\nheader-includes:\n- \\usepackage{apacite}\n- \\bibliographystyle{apacite}\nbibliography: references.bib\n---\nNote that I’ve added a new section header-includes: and in it, I’ve told knit to load the \\(\\LaTeX\\) package apacite for APA citations, and told it to use APA bibliographic style. I’ve also added a section bibliography: to tell it what file has my references, in Bibtex format."
   },
   {
     "objectID": "index.html#cross-referencing-figures-and-tables",
@@ -116,28 +116,28 @@
     "href": "index.html#using-a-wordcount-plugin-to-r-studio-for-word-counts",
     "title": "Introduction to R Markdown",
     "section": "Using a wordcount plugin to R Studio for word counts",
-    "text": "Using a wordcount plugin to R Studio for word counts\nUsing the Wordcount add-in to R Studio for tracking word count and readability."
+    "text": "Using a wordcount plugin to R Studio for word counts\ndemo using this plugin."
   },
   {
     "objectID": "index.html#fine-tuning-your-ms-word-document",
     "href": "index.html#fine-tuning-your-ms-word-document",
     "title": "Introduction to R Markdown",
     "section": "Fine-tuning your MS-Word document",
-    "text": "Fine-tuning your MS-Word document\nFine-tuning your resulting MS-Word document by adjusting the built-in style sheets.\n\n\n\nIntroduction to R Markdown (kwm@unm.edu)"
+    "text": "Fine-tuning your MS-Word document\ndemo\n\n\n\nIntroduction to R Markdown (kwm@unm.edu)"
   },
   {
     "objectID": "index.html#knitting-your-document-to-html-or-ms-word.",
     "href": "index.html#knitting-your-document-to-html-or-ms-word.",
     "title": "Introduction to R Markdown",
     "section": "“knitting” your document to HTML or MS-Word.",
-    "text": "“knitting” your document to HTML or MS-Word.\nChecking your work incrementally by knitting to HTML"
+    "text": "“knitting” your document to HTML or MS-Word.\nThis button  will will turn you R Markdown into whatever output you’ve chosen. Usually, this will be word_document or html_document.\nRemember the YAML header:\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: word_document\n---"
   },
   {
     "objectID": "index.html#overview-2",
     "href": "index.html#overview-2",
     "title": "Introduction to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\nFormula notation\nTables of contents\nCitations\nCross-Referencing Figures and Tables\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
+    "text": "Overview:\n\n\nFormula notation\nTables of contents\nCitations\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
   },
   {
     "objectID": "index.html#what-is-r-markdown-and-why-use-it-1",
@@ -152,5 +152,40 @@
     "title": "Introduction to R Markdown",
     "section": "What is R Markdown and why use it?",
     "text": "What is R Markdown and why use it?\n\nMarkup Languages\n\nSince the early 1960s, so-called “markup” languages have been developed and used to add structure and control appearance of plain text documents. Among them are HyperText Markup Language (HTML), \\(\\TeX\\)/\\(\\LaTeX\\), and Yet Another Markup Language (YAML).\nR-Markdown is both a pun (marking down instead of up) and a promotion of it being a next-generation mark(up|down) language."
+  },
+  {
+    "objectID": "index.html#blocks-of-r-code-with-code-snippets-and-inline-code.",
+    "href": "index.html#blocks-of-r-code-with-code-snippets-and-inline-code.",
+    "title": "Introduction to R Markdown",
+    "section": "blocks of R code with “code snippets” and inline code.",
+    "text": "blocks of R code with “code snippets” and inline code.\nSource view of R code snippet and inline code."
+  },
+  {
+    "objectID": "index.html#blocks-of-r-code-with-code-snippets-and-inline-code.-1",
+    "href": "index.html#blocks-of-r-code-with-code-snippets-and-inline-code.-1",
+    "title": "Introduction to R Markdown",
+    "section": "blocks of R code with “code snippets” and inline code.",
+    "text": "blocks of R code with “code snippets” and inline code.\nKnitted (rendered) view of R code snippet and inline code."
+  },
+  {
+    "objectID": "index.html#tables-of-contents-1",
+    "href": "index.html#tables-of-contents-1",
+    "title": "Introduction to R Markdown",
+    "section": "Tables of contents",
+    "text": "Tables of contents\n…you will get a Table of Contents something like this at the top of your document. If your output target is word_document, it will be slightly more elaborate.\nThe TOC is constructed from all the lines using header style (#, ##, ###, etc.)"
+  },
+  {
+    "objectID": "index.html#citations-1",
+    "href": "index.html#citations-1",
+    "title": "Introduction to R Markdown",
+    "section": "Citations",
+    "text": "Citations\nCitations can be added by nesting it in a [@blah] construction like this\nHere is some text in which I will cite references, such as [@olson2020] or perhaps @bowser2006 or a particular page of [@aragon2020, Page 34-55] or cite a DOI [@hodgson2006]\nCitations that aren’t in a bibliography file can be added with the DOI, but that requires using the editor in visual mode, and choosing Insert/Citation/From DOI."
+  },
+  {
+    "objectID": "index.html#citations-2",
+    "href": "index.html#citations-2",
+    "title": "Introduction to R Markdown",
+    "section": "Citations",
+    "text": "Citations\nOnce you knit your document, you should see your citations and reference list show up something like this. You will probably want to put a # Works cited or equivalent at the bottom of your document so it will be immediately before the reference list."
   }
 ]
