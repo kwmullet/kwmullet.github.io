@@ -1,5 +1,14 @@
 ---
-title: "kwmullet.github.io"
+title: "Introduction to R Markdown"
+author: Kevin Mullet &lt;kwm@unm.edu&gt;
+date: 27 Jan 2025
+format: 
+   revealjs: 
+      transition: fade
+      transition-speed: fast
+      footer: Introduction to R Markdown (kwm@unm.edu)
+      theme: night
+
 ---
 
 This is a Quarto website.
