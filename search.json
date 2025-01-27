@@ -1,31 +1,115 @@
 [
   {
-    "objectID": "index.html#section",
-    "href": "index.html#section",
-    "title": "Introduction to R Markdown",
-    "section": "",
-    "text": "Overview:\nWhat is R Markdown, and a brief version of how we got here from Donald Knuth’s idea of Literate Programming and TeX."
-  },
-  {
     "objectID": "index.html#overview",
     "href": "index.html#overview",
+    "title": "Introduction to R Markdown",
+    "section": "Overview:",
+    "text": "Overview:\n\n\n\n\n\n\n\nTLDR: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file.\n\n\n\n\n\n\n\nWhat is R Markdown, and a brief version of how we got here from Donald Knuth’s idea of Literate Programming and TeX."
+  },
+  {
+    "objectID": "index.html#overview-1",
+    "href": "index.html#overview-1",
     "title": "Introduction to R Markdown",
     "section": "Overview:",
     "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use it to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\nblocks of R code with “code snippets”"
   },
   {
-    "objectID": "index.html#overview-cont.",
-    "href": "index.html#overview-cont.",
+    "objectID": "index.html#overview-_cont.",
+    "href": "index.html#overview-_cont.",
     "title": "Introduction to R Markdown",
-    "section": "Overview (cont.)",
-    "text": "Overview (cont.)\n\n\nFormula notation\nTables of contents\nCitations\nCross-Referencing Figures and Tables\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
+    "section": "Overview \\(_{(cont.)}\\)",
+    "text": "Overview \\(_{(cont.)}\\)\n\n\nFormula notation\nTables of contents\nCitations\nCross-Referencing Figures and Tables\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
   },
   {
-    "objectID": "index.html#sdfsdfsdf",
-    "href": "index.html#sdfsdfsdf",
+    "objectID": "index.html#what-is-r-markdown-and-why-use-it",
+    "href": "index.html#what-is-r-markdown-and-why-use-it",
     "title": "Introduction to R Markdown",
-    "section": "sdfsdfsdf",
-    "text": "sdfsdfsdf\nWhy use it? What needs to be in place to use it, and to generate MS-Word documents with it Checking your work incrementally by knitting to HTML Document structure YAML — Yet Another Markup Language Title, Author, Date, Tables of Contents Setup block and snippet flags R code snippets and inline code Differences between the source and visual editor modes Markdown Header levels Lists Bold, italics links images Improved table display with Kable Formula notation Using citations and references Citations using DOIs, BibTex format, or integration with Zotero Using cross-references with Figures and Tables Using the Wordcount add-in to R Studio for tracking word count and readability. Fine-tuning your resulting MS-Word document by adjusting the built-in style sheets."
+    "section": "What is R Markdown and why use it?",
+    "text": "What is R Markdown and why use it?\nWhy use it?"
+  },
+  {
+    "objectID": "index.html#what-needs-to-be-in-place-to-use-it-to-generate-ms-word-documents",
+    "href": "index.html#what-needs-to-be-in-place-to-use-it-to-generate-ms-word-documents",
+    "title": "Introduction to R Markdown",
+    "section": "What needs to be in place to use it to generate MS-Word documents?",
+    "text": "What needs to be in place to use it to generate MS-Word documents?\nWhat needs to be in place to use it, and to generate MS-Word documents with it"
+  },
+  {
+    "objectID": "index.html#the-structure-of-an-r-markdown-document",
+    "href": "index.html#the-structure-of-an-r-markdown-document",
+    "title": "Introduction to R Markdown",
+    "section": "The structure of an R Markdown document",
+    "text": "The structure of an R Markdown document\nDocument structure YAML — Yet Another Markup Language Title, Author, Date, Tables of Contents Setup block and snippet flags"
+  },
+  {
+    "objectID": "index.html#visual-and-source-editor-modes",
+    "href": "index.html#visual-and-source-editor-modes",
+    "title": "Introduction to R Markdown",
+    "section": "Visual and source editor modes",
+    "text": "Visual and source editor modes\nDifferences between the source and visual editor modes"
+  },
+  {
+    "objectID": "index.html#markdown",
+    "href": "index.html#markdown",
+    "title": "Introduction to R Markdown",
+    "section": "Markdown",
+    "text": "Markdown\nHeader levels Lists Bold, italics links images\nMarkdown"
+  },
+  {
+    "objectID": "index.html#blocks-of-r-code-with-code-snippets",
+    "href": "index.html#blocks-of-r-code-with-code-snippets",
+    "title": "Introduction to R Markdown",
+    "section": "blocks of R code with “code snippets”",
+    "text": "blocks of R code with “code snippets”\nImproved table display with Kable"
+  },
+  {
+    "objectID": "index.html#knitting-your-document-to-html-or-ms-word.",
+    "href": "index.html#knitting-your-document-to-html-or-ms-word.",
+    "title": "Introduction to R Markdown",
+    "section": "“knitting” your document to HTML or MS-Word.",
+    "text": "“knitting” your document to HTML or MS-Word.\nChecking your work incrementally by knitting to HTML"
+  },
+  {
+    "objectID": "index.html#formula-notation",
+    "href": "index.html#formula-notation",
+    "title": "Introduction to R Markdown",
+    "section": "Formula notation",
+    "text": "Formula notation\nFormula notation"
+  },
+  {
+    "objectID": "index.html#tables-of-contents",
+    "href": "index.html#tables-of-contents",
+    "title": "Introduction to R Markdown",
+    "section": "Tables of contents",
+    "text": "Tables of contents"
+  },
+  {
+    "objectID": "index.html#citations",
+    "href": "index.html#citations",
+    "title": "Introduction to R Markdown",
+    "section": "Citations",
+    "text": "Citations\nUsing citations and references Citations using DOIs, BibTex format, or integration with Zotero"
+  },
+  {
+    "objectID": "index.html#cross-referencing-figures-and-tables",
+    "href": "index.html#cross-referencing-figures-and-tables",
+    "title": "Introduction to R Markdown",
+    "section": "Cross-Referencing Figures and Tables",
+    "text": "Cross-Referencing Figures and Tables\nUsing cross-references with Figures and Tables"
+  },
+  {
+    "objectID": "index.html#using-a-wordcount-plugin-to-r-studio-for-word-counts",
+    "href": "index.html#using-a-wordcount-plugin-to-r-studio-for-word-counts",
+    "title": "Introduction to R Markdown",
+    "section": "Using a wordcount plugin to R Studio for word counts",
+    "text": "Using a wordcount plugin to R Studio for word counts\nUsing the Wordcount add-in to R Studio for tracking word count and readability."
+  },
+  {
+    "objectID": "index.html#fine-tuning-your-ms-word-document",
+    "href": "index.html#fine-tuning-your-ms-word-document",
+    "title": "Introduction to R Markdown",
+    "section": "Fine-tuning your MS-Word document",
+    "text": "Fine-tuning your MS-Word document\nFine-tuning your resulting MS-Word document by adjusting the built-in style sheets."
   },
   {
     "objectID": "about.html",
