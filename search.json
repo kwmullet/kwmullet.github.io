@@ -14,32 +14,46 @@
     "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use it to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\nblocks of R code with “code snippets”"
   },
   {
-    "objectID": "index.html#overview-_cont.",
-    "href": "index.html#overview-_cont.",
+    "objectID": "index.html#overview-2",
+    "href": "index.html#overview-2",
     "title": "Introduction to R Markdown",
-    "section": "Overview \\(_{(cont.)}\\)",
-    "text": "Overview \\(_{(cont.)}\\)\n\n\nFormula notation\nTables of contents\nCitations\nCross-Referencing Figures and Tables\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
+    "section": "Overview:",
+    "text": "Overview:\n\n\nFormula notation\nTables of contents\nCitations\nCross-Referencing Figures and Tables\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
   },
   {
     "objectID": "index.html#what-is-r-markdown-and-why-use-it",
     "href": "index.html#what-is-r-markdown-and-why-use-it",
     "title": "Introduction to R Markdown",
     "section": "What is R Markdown and why use it?",
-    "text": "What is R Markdown and why use it?\nWhy use it?"
+    "text": "What is R Markdown and why use it?\n\n“Literate Programming”\n\nIn 1962, grad student Donald Knuth was approached by a publisher to write a book on compiler (computer language) design. In response (watch for more scope creep), he proposed a 12-chapter book on computer programming. The project eventually balooned to a seven volume set called “The Art of Computer Programming”, only four of which have been published to date (he’s currently 86). Knuth, who later became a CS professor at Stanford, found the typesetting tools completely (to him) inadequate to convey the math formulas in the books, so he suspended work to invent \\(\\TeX\\) (not unlike Newton inventing calculus to describe physics). Once he did that, he invented something called “literate programming” where code, output, and the text of an article or book could co-exist on the same document."
+  },
+  {
+    "objectID": "index.html#what-is-r-markdown-and-why-use-it-1",
+    "href": "index.html#what-is-r-markdown-and-why-use-it-1",
+    "title": "Introduction to R Markdown",
+    "section": "What is R Markdown and why use it?",
+    "text": "What is R Markdown and why use it?\n\nR\n\nIn 1993, Ross Ihaka and Robert Gentleman wrote a statistical programming language that would be an update to the then-popular “S”. They named it R not only to promote it as a successor to S, but because it was the first letter of each of their names."
+  },
+  {
+    "objectID": "index.html#what-is-r-markdown-and-why-use-it-2",
+    "href": "index.html#what-is-r-markdown-and-why-use-it-2",
+    "title": "Introduction to R Markdown",
+    "section": "What is R Markdown and why use it?",
+    "text": "What is R Markdown and why use it?\n\nMarkup Languages\n\nSince the early 1960s, so-called “markup” languages have been developed and used to add structure and control appearance of plain text documents. Among them are HyperText Markup Language (HTML), \\(\\TeX\\)/\\(\\LaTeX\\), and Yet Another Markup Language (YAML).\nR-Markdown is both a pun (marking down instead of up) and a promotion of it being a next-generation mark(up|down) language."
   },
   {
     "objectID": "index.html#what-needs-to-be-in-place-to-use-it-to-generate-ms-word-documents",
     "href": "index.html#what-needs-to-be-in-place-to-use-it-to-generate-ms-word-documents",
     "title": "Introduction to R Markdown",
     "section": "What needs to be in place to use it to generate MS-Word documents?",
-    "text": "What needs to be in place to use it to generate MS-Word documents?\nWhat needs to be in place to use it, and to generate MS-Word documents with it"
+    "text": "What needs to be in place to use it to generate MS-Word documents?\n\n\nOn a fresh or fully-functional installation of R and R Studio which has never created an R Markdown document, the user will be prompted to approve installation of several packages the first time they create an R Markdown document."
   },
   {
     "objectID": "index.html#the-structure-of-an-r-markdown-document",
     "href": "index.html#the-structure-of-an-r-markdown-document",
     "title": "Introduction to R Markdown",
     "section": "The structure of an R Markdown document",
-    "text": "The structure of an R Markdown document\nDocument structure YAML — Yet Another Markup Language Title, Author, Date, Tables of Contents Setup block and snippet flags"
+    "text": "The structure of an R Markdown document\nYAML header – You’ll may add more here over time\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: word_document\n---\nSetup block and snippet flags\n\nAfter the YAML and the setup block, you can put an arbitrary amount of markup around R (or other languages, but that’s “beyond the scope” snippets."
   },
   {
     "objectID": "index.html#visual-and-source-editor-modes",
@@ -53,7 +67,7 @@
     "href": "index.html#markdown",
     "title": "Introduction to R Markdown",
     "section": "Markdown",
-    "text": "Markdown\nHeader levels Lists Bold, italics links images\nMarkdown"
+    "text": "Markdown\nHeader levels Lists Bold, italics links images\n\n\n\n\n\n\nMarkdown"
   },
   {
     "objectID": "index.html#blocks-of-r-code-with-code-snippets",
@@ -74,7 +88,7 @@
     "href": "index.html#formula-notation",
     "title": "Introduction to R Markdown",
     "section": "Formula notation",
-    "text": "Formula notation\nFormula notation"
+    "text": "Formula notation\nFormulas are given as \\(\\LaTeX\\) between two dollar signs thus:\n$\\hat{y}=\\beta_0+\\beta_1x+\\epsilon$\nyields\n\\(\\hat{y}=\\beta_0+\\beta_1x+\\epsilon\\)\nBy the way,\n$\\LaTeX$\nyields\n\\(\\LaTeX\\)"
   },
   {
     "objectID": "index.html#tables-of-contents",
