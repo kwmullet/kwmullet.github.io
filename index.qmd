@@ -250,9 +250,9 @@ Here is some text in which I will cite references, such as [@olson2020] or perha
 
 Citations that aren't in a bibliography file can be added with the DOI,
 but that requires using the editor in visual mode, and choosing
-Insert/Citation/From DOI. 
+Insert/Citation/From DOI.
 
-![](./images/insertingFromDOI.png)
+![](./images/insertingFromDOI.png){fig-align="left" width="100%"}
 
 ## Citations
 
