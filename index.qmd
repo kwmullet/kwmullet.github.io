@@ -8,94 +8,189 @@ format:
       transition-speed: fast
       footer: Introduction to R Markdown (kwm@unm.edu)
       theme: night
-
 ---
 
-##  Overview:
+## Overview:
 
 ::: {.callout-tip title="<i>TLDR</i>: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file."}
-
 :::
 
+What is R Markdown, and a brief version of how we got here from Donald
+Knuth's idea of Literate Programming and TeX.
 
-What is R Markdown, and a brief version of how we got here from Donald Knuth's idea of Literate Programming and TeX.
+## Overview:
 
-##   Overview:
-::: {.incremental}
-- What is R Markdown and why use it?
-- What needs to be in place to use it to generate MS-Word documents?
-- The structure of an R Markdown document
-- Visual and source editor modes
-- Markdown
-- blocks of R code with "**code snippets**"
+::: incremental
+-   What is R Markdown and why use it?
+-   What needs to be in place to use it to generate MS-Word documents?
+-   The structure of an R Markdown document
+-   Visual and source editor modes
+-   Markdown
+-   blocks of R code with "**code snippets**"
 :::
 
-## Overview $_{(cont.)}$
-::: {.incremental}
-- Formula notation
-- Tables of contents
-- Citations
-- Cross-Referencing Figures and Tables
-- Using a wordcount plugin to R Studio for word counts
-- Fine-tuning your MS-Word document
+## Overview:
+
+::: incremental
+-   Formula notation
+-   Tables of contents
+-   Citations
+-   Cross-Referencing Figures and Tables
+-   Using a wordcount plugin to R Studio for word counts
+-   Fine-tuning your MS-Word document
 :::
 
-## What is R Markdown and why use it?
-Why use it?
+## What is R Markdown and why use it? {.smaller}
 
-## What needs to be in place to use it to generate MS-Word documents?
+-   "Literate Programming"
+    -   In 1962, grad student Donald Knuth was approached by a publisher
+        to write a book on compiler (computer language) design. In
+        response (watch for more scope creep), he proposed a 12-chapter
+        book on computer programming. The project eventually balooned to
+        a seven volume set called "The Art of Computer Programming",
+        only four of which have been published to date (he's currently
+        86). Knuth, who later became a CS professor at Stanford, found
+        the typesetting tools completely (to him) inadequate to convey
+        the math formulas in the books, so he suspended work to invent
+        $\TeX$ (not unlike Newton inventing calculus to describe
+        physics). Once he did that, he invented something called
+        "literate programming" where code, output, and the text of an
+        article or book could co-exist on the same document.
 
-What needs to be in place to use it, and to generate MS-Word documents with it
+## What is R Markdown and why use it? {.smaller}
+
+-   R
+    -   In 1993, Ross Ihaka and Robert Gentleman wrote a statistical
+        programming language that would be an update to the then-popular
+        "S". They named it R not only to promote it as a successor to S,
+        but because it was the first letter of each of their names.
+
+## What is R Markdown and why use it? {.smaller}
+
+-   Markup Languages
+    -   Since the early 1960s, so-called "markup" languages have been
+        developed and used to add structure and control appearance of
+        plain text documents. Among them are HyperText Markup Language
+        (HTML), $\TeX$/$\LaTeX$, and Yet Another Markup Language (YAML).
+    -   R-Markdown is both a pun (marking down instead of up) and a
+        promotion of it being a next-generation mark(up\|down) language.
+
+## What needs to be in place to use it to generate MS-Word documents? {.smaller}
+
+::::: columns
+::: {.column width="30%"}
+On a fresh or fully-functional installation of R and R Studio which has
+never created an R Markdown document, the user will be prompted to
+approve installation of several packages the first time they create an R
+Markdown document.
+:::
+
+::: {.column width="70%"}
+![](./images/stuffToInstall.png)
+:::
+:::::
 
 ## The structure of an R Markdown document
 
-Document structure
-YAML — Yet Another Markup Language
-Title, Author, Date, Tables of Contents
+YAML header -- You'll may add more here over time
+
+```         
+---
+title: "My Sample Markdown Document"
+author: "Eeyore Namehere"
+date: "`r Sys.Date()`"
+output: word_document
+---
+```
+
 Setup block and snippet flags
 
+![](./images/setupSnippet.png)
+
+After the YAML and the setup block, you can put an arbitrary amount of
+markup around R (or other languages, but that's "beyond the scope"
+snippets.
+
 ## Visual and source editor modes
+
 Differences between the source and visual editor modes
+
+:::: {.columns}
+::: {.column width="60%"}
+![](./images/sourceEditor.png)
+:::
+::: {.column width="40%"}
+![](./images/visual editor.png)
+:::
+::::
+
 
 
 ## Markdown
-Header levels
-Lists
-Bold, italics
-links
-images
+
+Header levels Lists Bold, italics links images
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./images/sourceAndHeaders.png)
+:::
+::: {.column width="50%"}
+![](./images/headersRendered.png)
+:::
+::::
+
+
+
 
 Markdown
 
 ## blocks of R code with "**code snippets**"
-Improved table display with  Kable
+
+Improved table display with Kable
 
 ## "knitting" your document to HTML or MS-Word.
+
 Checking your work incrementally by knitting to HTML
 
 ## Formula notation
-Formula notation
 
+Formulas are given as $\LaTeX$ between two dollar signs thus:
+
+```         
+$\hat{y}=\beta_0+\beta_1x+\epsilon$
+```
+
+yields
+
+$\hat{y}=\beta_0+\beta_1x+\epsilon$
+
+By the way,
+
+```         
+$\LaTeX$
+```
+
+yields
+
+$\LaTeX$
 
 ## Tables of contents
 
-
 ## Citations
-Using citations and references
-Citations using DOIs, BibTex format, or integration with Zotero
 
+Using citations and references Citations using DOIs, BibTex format, or
+integration with Zotero
 
 ## Cross-Referencing Figures and Tables
+
 Using cross-references with Figures and Tables
 
-
 ## Using a wordcount plugin to R Studio for word counts
-Using the Wordcount add-in to R Studio for tracking word count and readability.
 
+Using the Wordcount add-in to R Studio for tracking word count and
+readability.
 
 ## Fine-tuning your MS-Word document
-Fine-tuning your resulting MS-Word document by adjusting the built-in style sheets.
 
-
-
-
+Fine-tuning your resulting MS-Word document by adjusting the built-in
+style sheets.
