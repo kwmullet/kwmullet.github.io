@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "Introduction to R Markdown",
+    "section": "",
+    "text": "Overview:\nWhat is R Markdown, and a brief version of how we got here from Donald Knuth’s idea of Literate Programming and TeX."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Introduction to R Markdown",
+    "section": "Overview:",
+    "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use it to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\nblocks of R code with “code snippets”"
+  },
+  {
+    "objectID": "index.html#overview-cont.",
+    "href": "index.html#overview-cont.",
+    "title": "Introduction to R Markdown",
+    "section": "Overview (cont.)",
+    "text": "Overview (cont.)\n\n\nFormula notation\nTables of contents\nCitations\nCross-Referencing Figures and Tables\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
+  },
+  {
+    "objectID": "index.html#sdfsdfsdf",
+    "href": "index.html#sdfsdfsdf",
+    "title": "Introduction to R Markdown",
+    "section": "sdfsdfsdf",
+    "text": "sdfsdfsdf\nWhy use it? What needs to be in place to use it, and to generate MS-Word documents with it Checking your work incrementally by knitting to HTML Document structure YAML — Yet Another Markup Language Title, Author, Date, Tables of Contents Setup block and snippet flags R code snippets and inline code Differences between the source and visual editor modes Markdown Header levels Lists Bold, italics links images Improved table display with Kable Formula notation Using citations and references Citations using DOIs, BibTex format, or integration with Zotero Using cross-references with Figures and Tables Using the Wordcount add-in to R Studio for tracking word count and readability. Fine-tuning your resulting MS-Word document by adjusting the built-in style sheets.\n\n\n\nIntroduction to R Markdown (kwm@unm.edu)"
+  }
+]
