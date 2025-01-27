@@ -140,15 +140,40 @@ Kevin Mullet &lt;kwm@unm.edu&gt;
 
   <p class="date">2025-01-27</p>
 </section>
-<section class="slide level2">
-
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<section id="section" class="slide level2">
+<h2></h2>
+<p>Overview:</p>
+<p>What is R Markdown, and a brief version of how we got here from Donald Knuth’s idea of Literate Programming and TeX.</p>
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview:</h2>
+<div>
+<ul>
+<li class="fragment">What is R Markdown and why use it?</li>
+<li class="fragment">What needs to be in place to use it to generate MS-Word documents?</li>
+<li class="fragment">The structure of an R Markdown document</li>
+<li class="fragment">Visual and source editor modes</li>
+<li class="fragment">Markdown</li>
+<li class="fragment">blocks of R code with “<strong>code snippets</strong>”</li>
+</ul>
 </div>
+</section>
+<section id="overview-cont." class="slide level2">
+<h2>Overview (<em>cont.</em>)</h2>
+<div>
+<ul>
+<li class="fragment">Formula notation</li>
+<li class="fragment">Tables of contents</li>
+<li class="fragment">Citations</li>
+<li class="fragment">Cross-Referencing Figures and Tables</li>
+<li class="fragment">Using a wordcount plugin to R Studio for word counts</li>
+<li class="fragment">Fine-tuning your MS-Word document</li>
+</ul>
 </div>
+</section>
+<section id="sdfsdfsdf" class="slide level2">
+<h2>sdfsdfsdf</h2>
+<p>Why use it? What needs to be in place to use it, and to generate MS-Word documents with it Checking your work incrementally by knitting to HTML Document structure YAML — Yet Another Markup Language Title, Author, Date, Tables of Contents Setup block and snippet flags R code snippets and inline code Differences between the source and visual editor modes Markdown Header levels Lists Bold, italics links images Improved table display with Kable Formula notation Using citations and references Citations using DOIs, BibTex format, or integration with Zotero Using cross-references with Figures and Tables Using the Wordcount add-in to R Studio for tracking word count and readability. Fine-tuning your resulting MS-Word document by adjusting the built-in style sheets.</p>
 
 
 </section>
@@ -367,44 +392,6 @@ Kevin Mullet &lt;kwm@unm.edu&gt;
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
