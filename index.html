@@ -6,7 +6,7 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Kevin Mullet <kwm@unm.edu>">
@@ -30,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-c1f635a6a944ce379414891b33bb93f0.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-423d414d36ce366a9d05f36d06304417.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -123,7 +123,7 @@
     }
   </style>
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
@@ -142,14 +142,14 @@ Kevin Mullet &lt;kwm@unm.edu&gt;
 </section>
 <section id="overview" class="slide level2">
 <h2>Overview:</h2>
-<div title="<i>TLDR</i>: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file.">
+<div title="TLDR: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file.">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong><i>TLDR</i>: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file.</strong></p>
+<p><strong>TLDR: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file.</strong></p>
 </div>
 <div class="callout-content">
 
@@ -157,7 +157,6 @@ Kevin Mullet &lt;kwm@unm.edu&gt;
 </div>
 </div>
 </div>
-<p>What is R Markdown, and a brief version of how we got here from Donald Knuth’s idea of Literate Programming and TeX.</p>
 </section>
 <section id="overview-1" class="slide level2">
 <h2>Overview:</h2>
@@ -179,7 +178,6 @@ Kevin Mullet &lt;kwm@unm.edu&gt;
 <li class="fragment">Formula notation</li>
 <li class="fragment">Tables of contents</li>
 <li class="fragment">Citations</li>
-<li class="fragment">Cross-Referencing Figures and Tables</li>
 <li class="fragment">Using a wordcount plugin to R Studio for word counts</li>
 <li class="fragment">Fine-tuning your MS-Word document</li>
 </ul>
@@ -256,15 +254,26 @@ output: word_document
 </div></div>
 <p>Markdown</p>
 </section>
-<section id="blocks-of-r-code-with-code-snippets" class="slide level2">
-<h2>blocks of R code with “<strong>code snippets</strong>”</h2>
-<p>Improved table display with Kable</p>
+<section id="blocks-of-r-code-with-code-snippets-and-inline-code." class="slide level2">
+<h2>blocks of R code with “code snippets” and inline code.</h2>
+<p>Source view of R code snippet and inline code. <img data-src="./images/snippetSource.png"></p>
+</section>
+<section id="blocks-of-r-code-with-code-snippets-and-inline-code.-1" class="slide level2">
+<h2>blocks of R code with “code snippets” and inline code.</h2>
+<p>Knitted (rendered) view of R code snippet and inline code. <img data-src="./images/renderedSnippet.png"></p>
 </section>
 <section id="knitting-your-document-to-html-or-ms-word." class="slide level2">
 <h2>“knitting” your document to HTML or MS-Word.</h2>
-<p>Checking your work incrementally by knitting to HTML</p>
+<p>This button <img data-src="./images/knit.png"> will will turn you R Markdown into whatever output you’ve chosen. Usually, this will be <code>word_document</code> or <code>html_document</code>.</p>
+<p>Remember the YAML header:</p>
+<pre><code>---
+title: "My Sample Markdown Document"
+author: "Eeyore Namehere"
+date: "`r Sys.Date()`"
+output: word_document
+---</code></pre>
 </section>
-<section id="formula-notation" class="slide level2">
+<section id="formula-notation" class="slide level2 larger">
 <h2>Formula notation</h2>
 <p>Formulas are given as <span class="math inline">\(\LaTeX\)</span> between two dollar signs thus:</p>
 <pre><code>$\hat{y}=\beta_0+\beta_1x+\epsilon$</code></pre>
@@ -277,22 +286,59 @@ output: word_document
 </section>
 <section id="tables-of-contents" class="slide level2">
 <h2>Tables of contents</h2>
+<p>If you modify your YAML header like this…</p>
+<pre><code>---
+title: "My Sample Markdown Document"
+author: "Eeyore Namehere"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+---</code></pre>
+</section>
+<section id="tables-of-contents-1" class="slide level2">
+<h2>Tables of contents</h2>
+<p>…you will get a Table of Contents something like this at the top of your document. If your output target is <code>word_document</code>, it will be slightly more elaborate.</p>
+<p>The TOC is constructed from all the lines using header style (#, ##, ###, etc.) <img data-src="./images/htmlTOC.png"></p>
 </section>
 <section id="citations" class="slide level2">
 <h2>Citations</h2>
-<p>Using citations and references Citations using DOIs, BibTex format, or integration with Zotero</p>
+<p>To use citations and automatically generate a Works Cited at the end of the document, you can change your YAML like this. This isn’t the only approach, but this is what I’ve used.</p>
+<pre><code>---
+title: "My Sample Markdown Document"
+author: "Eeyore Namehere"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+header-includes:
+- \usepackage{apacite}
+- \bibliographystyle{apacite}
+bibliography: references.bib
+---</code></pre>
+<p>Note that I’ve added a new section <code>header-includes:</code> and in it, I’ve told knit to load the <span class="math inline">\(\LaTeX\)</span> package <code>apacite</code> for APA citations, and told it to use APA bibliographic style. I’ve also added a section <code>bibliography:</code> to tell it what file has my references, in Bibtex format.</p>
 </section>
-<section id="cross-referencing-figures-and-tables" class="slide level2">
-<h2>Cross-Referencing Figures and Tables</h2>
-<p>Using cross-references with Figures and Tables</p>
-</section>
+<section id="citations-1" class="slide level2">
+<h2>Citations</h2>
+<p>Citations can be added by nesting it in a <code>[@blah]</code> construction like this</p>
+<pre><code>Here is some text in which I will cite references, such as [@olson2020] or perhaps @bowser2006 or a particular page of [@aragon2020, Page 34-55] or cite a DOI [@hodgson2006]</code></pre>
+<p>Citations that aren’t in a bibliography file can be added with the DOI, but that requires using the editor in visual mode, and choosing Insert/Citation/From DOI.</p>
+
+<img data-src="./images/insertingFromDOI.png" class="r-stretch"></section>
+<section id="citations-2" class="slide level2">
+<h2>Citations</h2>
+<p>Once you knit your document, you should see your citations and reference list show up something like this. You will probably want to put a <code># Works cited</code> or equivalent at the bottom of your document so it will be immediately before the reference list.</p>
+
+<img data-src="./images/renderedCites.png" class="quarto-figure quarto-figure-left r-stretch" style="width:100.0%"></section>
 <section id="using-a-wordcount-plugin-to-r-studio-for-word-counts" class="slide level2">
 <h2>Using a wordcount plugin to R Studio for word counts</h2>
-<p>Using the Wordcount add-in to R Studio for tracking word count and readability.</p>
+<p>demo using <a href="&quot;https://github.com/benmarwick/wordcountaddin&quot;">this plugin</a>.</p>
 </section>
 <section id="fine-tuning-your-ms-word-document" class="slide level2">
 <h2>Fine-tuning your MS-Word document</h2>
-<p>Fine-tuning your resulting MS-Word document by adjusting the built-in style sheets.</p>
+<p>demo</p>
 
 
 </section>
