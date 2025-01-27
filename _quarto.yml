@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "kwmullet.github.io"
+  title: "rmarkdown.themullets.net"
   navbar:
     left:
       - href: index.qmd

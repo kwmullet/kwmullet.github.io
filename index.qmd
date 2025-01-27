@@ -11,9 +11,11 @@ format:
 
 ---
 
-## 
-Overview:
+##  Overview:
 
+::: {.callout-tip title="<i>TLDR</i>: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file."}
+
+:::
 
 
 What is R Markdown, and a brief version of how we got here from Donald Knuth's idea of Literate Programming and TeX.
@@ -28,7 +30,7 @@ What is R Markdown, and a brief version of how we got here from Donald Knuth's i
 - blocks of R code with "**code snippets**"
 :::
 
-## Overview (*cont.*)
+## Overview $_{(cont.)}$
 ::: {.incremental}
 - Formula notation
 - Tables of contents
@@ -38,28 +40,62 @@ What is R Markdown, and a brief version of how we got here from Donald Knuth's i
 - Fine-tuning your MS-Word document
 :::
 
-## sdfsdfsdf
+## What is R Markdown and why use it?
 Why use it?
+
+## What needs to be in place to use it to generate MS-Word documents?
+
 What needs to be in place to use it, and to generate MS-Word documents with it
-Checking your work incrementally by knitting to HTML
+
+## The structure of an R Markdown document
+
 Document structure
 YAML — Yet Another Markup Language
 Title, Author, Date, Tables of Contents
 Setup block and snippet flags
-R code snippets and inline code
+
+## Visual and source editor modes
 Differences between the source and visual editor modes
-Markdown
+
+
+## Markdown
 Header levels
 Lists
 Bold, italics
 links
 images
+
+Markdown
+
+## blocks of R code with "**code snippets**"
 Improved table display with  Kable
+
+## "knitting" your document to HTML or MS-Word.
+Checking your work incrementally by knitting to HTML
+
+## Formula notation
 Formula notation
+
+
+## Tables of contents
+
+
+## Citations
 Using citations and references
 Citations using DOIs, BibTex format, or integration with Zotero
+
+
+## Cross-Referencing Figures and Tables
 Using cross-references with Figures and Tables
+
+
+## Using a wordcount plugin to R Studio for word counts
 Using the Wordcount add-in to R Studio for tracking word count and readability.
+
+
+## Fine-tuning your MS-Word document
 Fine-tuning your resulting MS-Word document by adjusting the built-in style sheets.
+
+
 
 
