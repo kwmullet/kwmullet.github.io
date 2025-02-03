@@ -150,8 +150,29 @@
     "objectID": "index.html#cross-references",
     "href": "index.html#cross-references",
     "title": "Intro to R Markdown",
-    "section": "Cross references",
-    "text": "Cross references\n\nIn your paper, if you want to have references in your text to specific tables or figures in your documents rather than just “in the figure above”, you’ll need to know how to do cross-references.\nPlain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the bookdown package.\nAfter Bookdown is installed, you’ll have to modify your YAML header to use it.\nCross-referencing will be explained."
+    "section": "Cross-references",
+    "text": "Cross-references\n\nIn your paper, if you want to have references in your text to specific tables or figures in your documents rather than just “in the figure above”, you’ll need to know how to do cross-references.\nPlain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the bookdown package.\nAfter Bookdown is installed, you’ll have to modify your YAML header to use it.\nCross-referencing will be explained."
+  },
+  {
+    "objectID": "index.html#cross-references-1",
+    "href": "index.html#cross-references-1",
+    "title": "Intro to R Markdown",
+    "section": "Cross-references",
+    "text": "Cross-references\nInstalling the Bookdown package\nFrom your R Studio console, issue the command install.packages(\"bookdown\")\n\n\n\n\nR Studio will complain if you don’t have the packages installed to compile new packages from source, but if you’re on a Mac or Windows machine, it shouldn’t be necessary to have them."
+  },
+  {
+    "objectID": "index.html#cross-references-2",
+    "href": "index.html#cross-references-2",
+    "title": "Intro to R Markdown",
+    "section": "Cross-references",
+    "text": "Cross-references\nChanging your YAML header for Bookdown\nEtiam congue quam eget velit convallis, eu sagittis orci vestibulum. Vestibulum at massa turpis. Curabitur ornare ex sed purus vulputate, vitae porta augue rhoncus. Phasellus auctor suscipit purus, vel ultricies nunc. Nunc eleifend nulla ac purus volutpat, id fringilla felis aliquet. Duis vitae porttitor nibh, in rhoncus risus. Vestibulum a est vitae est tristique vehicula. Proin mollis justo id est tempus hendrerit. Praesent suscipit placerat congue. Aliquam eu elit gravida, consequat augue non, ultricies sapien. Nunc ultricies viverra ante, sit amet vehicula ante volutpat id. Etiam tempus purus vitae tellus mollis viverra. Donec at ornare mauris. Aliquam sodales hendrerit ornare. Suspendisse accumsan lacinia sapien, sit amet imperdiet dui molestie ut."
+  },
+  {
+    "objectID": "index.html#cross-referencing",
+    "href": "index.html#cross-referencing",
+    "title": "Intro to R Markdown",
+    "section": "Cross-referencing",
+    "text": "Cross-referencing\nDuis urna urna, pellentesque eu urna ut, malesuada bibendum dolor. Suspendisse potenti. Vivamus ornare, arcu quis molestie ultrices, magna est accumsan augue, auctor vulputate erat quam quis neque. Nullam scelerisque odio vel ultricies facilisis. Ut porta arcu non magna sagittis lacinia. Cras ornare vulputate lectus a tristique. Pellentesque ac arcu congue, rhoncus mi id, dignissim ligula."
   },
   {
     "objectID": "index.html#using-a-wordcount-plugin-to-r-studio-for-word-counts",
