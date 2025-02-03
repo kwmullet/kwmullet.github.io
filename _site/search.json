@@ -11,7 +11,7 @@
     "href": "index.html#overview",
     "title": "Intro to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\n\n\n\n\n\ntl;dr:\n\n\nHow to put the text and R output of your work in R Studio into a single, unified document, and save it as an MS-Word file to turn into Canvas.\n\n\n\n\n\n \n\n\nThis presentation may be found at https://kwmullet.github.io.\n\nIt was written in R Markdown using Quarto in R Studio, and the source is at https://github.com/kwmullet/kwmullet.github.io.\n\nPlease feel free to send me any questions, corrections, or comments we don’t get to in class at email kwm@unm.edu."
+    "text": "Overview:\n\n\n\n\n\n\ntl;dr:\n\n\nHow to put the text and R output of your work in R Studio into a single, unified document, and save it as an MS-Word file to turn into Canvas.\n\n\n\n\n \n\n\nThis presentation may be found at https://kwmullet.github.io.\n\nIt was written in R Markdown using Quarto in R Studio, and the source is at https://github.com/kwmullet/kwmullet.github.io.\n\nPlease feel free to send me any questions, corrections, or comments we don’t get to in class at email kwm@unm.edu."
   },
   {
     "objectID": "index.html#overview-cont.",

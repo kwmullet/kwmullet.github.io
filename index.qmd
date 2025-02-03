@@ -14,7 +14,8 @@ format:
 
 ## Overview: {.smaller}
 
-::: {.callout-note title="tl;dr:"}
+::: {.callout-note}
+## tl;dr:
 How to put the text and R output of your work in R Studio into a single,
 unified document, and save it as an MS-Word file to turn into Canvas.
 :::
