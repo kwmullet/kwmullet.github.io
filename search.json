@@ -18,7 +18,7 @@
     "href": "index.html#overview-2",
     "title": "Intro to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\nFormula notation\nTables of contents\nCitations\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
+    "text": "Overview:\n\n\nFormula notation\nTables of contents\nCitations\nCross-references\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
   },
   {
     "objectID": "index.html#what-is-r-markdown-and-why-use-it",
