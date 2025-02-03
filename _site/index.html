@@ -679,7 +679,7 @@ output:
 <section id="tables-of-contents-1" class="slide level2">
 <h2>Tables of contents</h2>
 <p>…you will get a Table of Contents something like this at the top of your document. If your output target is <code>word_document</code>, it will be slightly more elaborate.</p>
-<p>The TOC is constructed from all the lines using header style (#, ##, ###, etc.)</p>
+<p>The TOC is constructed from all the lines using header style (<code>#</code>, <code>##</code>, <code>###</code>, etc.)</p>
 <div class="columns">
 <div class="column" style="width:70%;">
 <p><img data-src="./images/htmlTOC.png"></p>
@@ -724,13 +724,33 @@ bibliography: references.bib
 
 <img data-src="./images/renderedCites.png" class="quarto-figure quarto-figure-left r-stretch" style="width:100.0%"></section>
 <section id="cross-references" class="slide level2">
-<h2>Cross references</h2>
+<h2>Cross-references</h2>
 <ul>
 <li>In your paper, if you want to have references in your text to specific tables or figures in your documents rather than just “in the figure above”, you’ll need to know how to do cross-references.</li>
 <li>Plain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the <code>bookdown</code> package.</li>
 <li>After Bookdown is installed, you’ll have to modify your <code>YAML</code> header to use it.</li>
 <li>Cross-referencing will be explained.</li>
 </ul>
+</section>
+<section id="cross-references-1" class="slide level2 smaller">
+<h2>Cross-references</h2>
+<h4 id="installing-the-bookdown-package">Installing the Bookdown package</h4>
+<p>From your R Studio console, issue the command<br> <code>install.packages("bookdown")</code><br></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="./images/bookdownInstall.png"></p>
+</div><div class="column" style="width:40%;">
+<p>R Studio will complain if you don’t have the packages installed to compile new packages from source, but if you’re on a Mac or Windows machine, it shouldn’t be necessary to have them.</p>
+</div></div>
+</section>
+<section id="cross-references-2" class="slide level2 smaller">
+<h2>Cross-references</h2>
+<h4 id="changing-your-yaml-header-for-bookdown">Changing your YAML header for Bookdown</h4>
+<p>Etiam quis tortor luctus, pellentesque ante a, finibus dolor. Phasellus in nibh et magna pulvinar malesuada. Ut nisl ex, sagittis at sollicitudin et, sollicitudin id nunc. In id porta urna. Proin porta dolor dolor, vel dapibus nisi lacinia in. Pellentesque ante mauris, ornare non euismod a, fermentum ut sapien. Proin sed vehicula enim. Aliquam tortor odio, vestibulum vitae odio in, tempor molestie justo. Praesent maximus lacus nec leo maximus blandit.</p>
+</section>
+<section id="cross-referencing" class="slide level2 smaller">
+<h2>Cross-referencing</h2>
+<p>Proin sodales neque erat, varius cursus diam tincidunt sit amet. Etiam scelerisque fringilla nisl eu venenatis. Donec sem ipsum, scelerisque ac venenatis quis, hendrerit vel mauris. Praesent semper erat sit amet purus condimentum, sit amet auctor mi feugiat. In hac habitasse platea dictumst. Nunc ac mauris in massa feugiat bibendum id in dui. Praesent accumsan urna at lacinia aliquet. Proin ultricies eu est quis pellentesque. In vel lorem at nisl rhoncus cursus eu quis mi. In eu rutrum ante, quis placerat justo. Etiam euismod nibh nibh, sed elementum nunc imperdiet in. Praesent gravida nunc vel odio lacinia, at tempus nisl placerat. Aenean id ipsum sed est sagittis hendrerit non in tortor.</p>
 </section>
 <section id="using-a-wordcount-plugin-to-r-studio-for-word-counts" class="slide level2">
 <h2>Using a wordcount plugin to R Studio for word counts</h2>

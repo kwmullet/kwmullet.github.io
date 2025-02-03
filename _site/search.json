@@ -227,8 +227,8 @@
     "objectID": "index.html#cross-references",
     "href": "index.html#cross-references",
     "title": "Intro to R Markdown",
-    "section": "Cross references",
-    "text": "Cross references\n\nIn your paper, if you want to have references in your text to specific tables or figures in your documents rather than just “in the figure above”, you’ll need to know how to do cross-references.\nPlain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the bookdown package.\nAfter Bookdown is installed, you’ll have to modify your YAML header to use it.\nCross-referencing will be explained."
+    "section": "Cross-references",
+    "text": "Cross-references\n\nIn your paper, if you want to have references in your text to specific tables or figures in your documents rather than just “in the figure above”, you’ll need to know how to do cross-references.\nPlain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the bookdown package.\nAfter Bookdown is installed, you’ll have to modify your YAML header to use it.\nCross-referencing will be explained."
   },
   {
     "objectID": "index.html#code-chunks-and-inline-code.",
@@ -250,5 +250,40 @@
     "title": "Intro to R Markdown",
     "section": "What needs to be in place to use R Studio to generate MS-Word documents?",
     "text": "What needs to be in place to use R Studio to generate MS-Word documents?\n\n\nOn a fresh or fully-functional installation of R and R Studio which has never created an R Markdown document, the user will be prompted to approve installation of several packages the first time they create an R Markdown document."
+  },
+  {
+    "objectID": "index.html#installing-the-bookdown-package",
+    "href": "index.html#installing-the-bookdown-package",
+    "title": "Intro to R Markdown",
+    "section": "Installing the Bookdown package",
+    "text": "Installing the Bookdown package\nFrom your R Studio console, issue the command install.packages(\"bookdown\")\n\n\n\n\nR Studio will complain if you don’t have the packages installed to compile new packages from source, but if you’re on a Mac or Windows machine, it shouldn’t be necessary to have them."
+  },
+  {
+    "objectID": "index.html#using-bookdown-in-your-yaml-header",
+    "href": "index.html#using-bookdown-in-your-yaml-header",
+    "title": "Intro to R Markdown",
+    "section": "Using Bookdown in your YAML header",
+    "text": "Using Bookdown in your YAML header"
+  },
+  {
+    "objectID": "index.html#cross-referencing",
+    "href": "index.html#cross-referencing",
+    "title": "Intro to R Markdown",
+    "section": "Cross-referencing",
+    "text": "Cross-referencing\nProin sodales neque erat, varius cursus diam tincidunt sit amet. Etiam scelerisque fringilla nisl eu venenatis. Donec sem ipsum, scelerisque ac venenatis quis, hendrerit vel mauris. Praesent semper erat sit amet purus condimentum, sit amet auctor mi feugiat. In hac habitasse platea dictumst. Nunc ac mauris in massa feugiat bibendum id in dui. Praesent accumsan urna at lacinia aliquet. Proin ultricies eu est quis pellentesque. In vel lorem at nisl rhoncus cursus eu quis mi. In eu rutrum ante, quis placerat justo. Etiam euismod nibh nibh, sed elementum nunc imperdiet in. Praesent gravida nunc vel odio lacinia, at tempus nisl placerat. Aenean id ipsum sed est sagittis hendrerit non in tortor."
+  },
+  {
+    "objectID": "index.html#cross-references-1",
+    "href": "index.html#cross-references-1",
+    "title": "Intro to R Markdown",
+    "section": "Cross-references",
+    "text": "Cross-references\nInstalling the Bookdown package\nFrom your R Studio console, issue the command install.packages(\"bookdown\")\n\n\n\n\nR Studio will complain if you don’t have the packages installed to compile new packages from source, but if you’re on a Mac or Windows machine, it shouldn’t be necessary to have them."
+  },
+  {
+    "objectID": "index.html#cross-references-2",
+    "href": "index.html#cross-references-2",
+    "title": "Intro to R Markdown",
+    "section": "Cross-references",
+    "text": "Cross-references\nChanging your YAML header for Bookdown\nEtiam quis tortor luctus, pellentesque ante a, finibus dolor. Phasellus in nibh et magna pulvinar malesuada. Ut nisl ex, sagittis at sollicitudin et, sollicitudin id nunc. In id porta urna. Proin porta dolor dolor, vel dapibus nisi lacinia in. Pellentesque ante mauris, ornare non euismod a, fermentum ut sapien. Proin sed vehicula enim. Aliquam tortor odio, vestibulum vitae odio in, tempor molestie justo. Praesent maximus lacus nec leo maximus blandit."
   }
 ]
