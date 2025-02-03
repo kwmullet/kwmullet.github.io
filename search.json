@@ -11,7 +11,7 @@
     "href": "index.html#overview-1",
     "title": "Intro to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use it to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\nblocks of R code with “code chunks”"
+    "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use R Studio to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\n“code chunks” and inline code"
   },
   {
     "objectID": "index.html#overview-2",
@@ -42,11 +42,11 @@
     "text": "What is R Markdown and why use it?\n\nMarkup Languages\n\nSince the early 1960s, so-called “markup” languages have been developed and used to add structure and control appearance of plain text documents. Among them are HyperText Markup Language (HTML), \\(\\TeX\\)/\\(\\LaTeX\\), and Yet Another Markup Language (YAML).\nR-Markdown is both a pun (marking down instead of up) and a promotion of it being a next-generation mark(up|down) language."
   },
   {
-    "objectID": "index.html#what-needs-to-be-in-place-to-use-it-to-generate-ms-word-documents",
-    "href": "index.html#what-needs-to-be-in-place-to-use-it-to-generate-ms-word-documents",
+    "objectID": "index.html#what-needs-to-be-in-place-to-use-r-studio-to-generate-ms-word-documents",
+    "href": "index.html#what-needs-to-be-in-place-to-use-r-studio-to-generate-ms-word-documents",
     "title": "Intro to R Markdown",
-    "section": "What needs to be in place to use it to generate MS-Word documents?",
-    "text": "What needs to be in place to use it to generate MS-Word documents?\n\n\nOn a fresh or fully-functional installation of R and R Studio which has never created an R Markdown document, the user will be prompted to approve installation of several packages the first time they create an R Markdown document."
+    "section": "What needs to be in place to use R Studio to generate MS-Word documents?",
+    "text": "What needs to be in place to use R Studio to generate MS-Word documents?\n\n\nOn a fresh or fully-functional installation of R and R Studio which has never created an R Markdown document, the user will be prompted to approve installation of several packages the first time they create an R Markdown document."
   },
   {
     "objectID": "index.html#the-structure-of-an-r-markdown-document",
@@ -84,18 +84,18 @@
     "text": "Markdown\nlists, bold, italics, links, and images\n\n\n- unordered list\n- of items\n- in no\n  - order\n    - whatsoever\n\n1.  ordered list\n1.  with some **bold** and\n1.  some *itallic*\n\nan image  ![](./images/knit.png)\nand a link to [the MPP page](http://mpp.unm.edu/).\n\n\nunordered list\nof items\nin no\n\norder\n\nwhatsoever\n\n\n\n\nordered list\nwith some bold and\nsome itallic\n\nan image  and a link to the MPP page."
   },
   {
-    "objectID": "index.html#blocks-of-r-code-with-code-chunks-and-inline-code.",
-    "href": "index.html#blocks-of-r-code-with-code-chunks-and-inline-code.",
+    "objectID": "index.html#code-chunks-and-inline-code.",
+    "href": "index.html#code-chunks-and-inline-code.",
     "title": "Intro to R Markdown",
-    "section": "blocks of R code with “code chunks” and inline code.",
-    "text": "blocks of R code with “code chunks” and inline code.\nSource view of R code chunk and inline code."
+    "section": "“code chunks” and inline code.",
+    "text": "“code chunks” and inline code.\nSource view of R code chunk and inline code."
   },
   {
-    "objectID": "index.html#blocks-of-r-code-with-code-chunks-and-inline-code.-1",
-    "href": "index.html#blocks-of-r-code-with-code-chunks-and-inline-code.-1",
+    "objectID": "index.html#code-chunks-and-inline-code.-1",
+    "href": "index.html#code-chunks-and-inline-code.-1",
     "title": "Intro to R Markdown",
-    "section": "blocks of R code with “code chunks” and inline code.",
-    "text": "blocks of R code with “code chunks” and inline code.\nKnitted (rendered) view of R code chunk and inline code."
+    "section": "“code chunks” and inline code.",
+    "text": "“code chunks” and inline code.\nKnitted (rendered) view of R code chunk and inline code."
   },
   {
     "objectID": "index.html#knitting-your-document-to-html-or-ms-word.",
