@@ -1,19 +1,43 @@
 ---
-title: "Introduction to R Markdown"
-author: Kevin Mullet &lt;kwm@unm.edu&gt;
-date: 27 Jan 2025
+title: "Intro to R Markdown"
+date: "2025-02-03"
+author:
+  name: Kevin Mullet
+  email: kwm@unm.edu
 format: 
    revealjs: 
       transition: fade
-      transition-speed: fast
-      footer: Introduction to R Markdown (kwm@unm.edu)
-      theme: simple
+      transition-speed: slow
+      footer: Intro to R Markdown (kwm@unm.edu)
+      theme: blood
 ---
 
-## Overview:
+## Overview: {.smaller}
 
-::: {.callout-tip title="TLDR: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file."}
+::: {.callout-tip title="tl;dr:"}
+How to put the text and R output of your work in R Studio into a single,
+unified document, and save it as an MS-Word file to turn into Canvas.
 :::
+
+<p style="display:inline-block; Yline-height:500% ">
+
+ 
+
+</p>
+
+<p>
+
+This presentation may be found at `https://kwmullet.github.io`.
+
+<hr >
+
+It was written in R Markdown using Quarto in R Studio, and the source is
+at `https://github.com/kwmullet/kwmullet.github.io`.
+
+<hr>
+
+Please feel free to send me any questions, corrections, or comments we
+don't get to in class at email `kwm@unm.edu`.
 
 ## Overview:
 
@@ -23,7 +47,7 @@ format:
 -   The structure of an R Markdown document
 -   Visual and source editor modes
 -   Markdown
--   blocks of R code with "**code snippets**"
+-   blocks of R code with "**code chunks**"
 :::
 
 ## Overview:
@@ -71,7 +95,7 @@ format:
     -   R-Markdown is both a pun (marking down instead of up) and a
         promotion of it being a next-generation mark(up\|down) language.
 
-## What needs to be in place to use it to generate MS-Word documents? {.smaller}
+## What needs to be in place to use it to generate MS-Word documents? {.smaller .center}
 
 ::::: columns
 ::: {.column width="30%"}
@@ -86,75 +110,165 @@ Markdown document.
 :::
 :::::
 
-## The structure of an R Markdown document
+## The structure of an R Markdown document {.smaller}
 
-YAML header -- You'll may add more here over time
+-   At the very top of your `R markdown` document:
+    -   YAML header (`Y`et `A`nother `M`arkdown `L`anguage)
+        -   You may add more to it over time
+        -   Start and end with a line of three dashes
+        -   Blank line after the closing three dashes
 
+:::: columns
+::: {.column width="70%"}
 ```         
 ---
 title: "My Sample Markdown Document"
 author: "Eeyore Namehere"
-date: "`r Sys.Date()`"
-output: word_document
+date: "`r Sys.Date()`" #<1>
+output: word_document #<2>
 ---
 ```
 
-Setup block and snippet flags
+1.  This construction will give you a dynamic date each time you `knit`
+    your document.
+2.  Usually, this will be `word_document` or `html_document`
+:::
+::::
 
+## The structure of an R Markdown document {.smaller}
+
+**Setup block and code chunk flags**
+
+The setup block is typically the first `r code chunk` in an
+`r markdown document`.
+
+:::::: columns
+::: {.column width="45%"}
 ![](./images/setupSnippet.png)
+:::
+
+:::: {.column width="40%"}
+::: callout-note
+## What is a `code chunk`?
+
+A `code chunk` is a block of executable code that begins and ends with a
+line of three backticks (\`\`\`). The first line of backticks ends with
+braces which indicate the language for the chunk (typically r ), a name
+for the code chunk, and however many options you care to set. Between
+the first and last lines is executable R code.
+:::
+::::
+::::::
 
 After the YAML and the setup block, you can put an arbitrary amount of
-markup around R (or other languages, but that's "beyond the scope"
-snippets.
+markup and R code chunks.
 
-## Visual and source editor modes
+## Visual and source editor modes {.smaller}
 
-Differences between the source and visual editor modes
-
-::::: columns
-::: {.column width="60%"}
+:::::: columns
+::: {.column width="35%"}
 ![](./images/sourceEditor.png)
 :::
 
-::: {.column width="40%"}
+::: {.column width="25%"}
 ![](./images/visual%20editor.png)
 :::
-:::::
+
+::: {.column width="40%"}
+:::
+::::::
+
+Toggle between source and visual editor with the button at the upper
+left of the editing pane.
 
 ## Markdown
 
-Header levels Lists Bold, italics links images
+Header levels
 
-::::: columns
-::: {.column width="50%"}
+:::::: columns
+::: {.column width="30%"}
 ![](./images/sourceAndHeaders.png)
 :::
 
-::: {.column width="50%"}
+::: {.column width="30%"}
 ![](./images/headersRendered.png)
+:::
+
+::: {.column width="30%"}
+:::
+::::::
+
+## Markdown {.scrollable .nostretch}
+
+lists, bold, italics, links, and images
+
+::::: columns
+::: {.column width="50%"}
+```         
+- unordered list
+- of items
+- in no
+  - order
+    - whatsoever
+
+1.  ordered list
+1.  with some **bold** and
+1.  some *itallic*
+
+an image  ![](./images/knit.png)
+and a link to [the MPP page](http://mpp.unm.edu/).
+```
+:::
+
+::: {.column width="50%"}
+-   unordered list
+-   of items
+-   in no
+    -   order
+        -   whatsoever
+
+1.  ordered list
+2.  with some **bold** and
+3.  some *itallic*
+
+an image ![](./images/knit.png) and a link to [the MPP
+page](http://mpp.unm.edu/).
 :::
 :::::
 
-Markdown
+## blocks of R code with "code chunks" and inline code.
 
-## blocks of R code with "code snippets" and inline code.
+Source view of R code chunk and inline code.
 
-Source view of R code snippet and inline code.
+::::: columns
+::: {.column width="60%"}
 ![](./images/snippetSource.png)
+:::
 
-## blocks of R code with "code snippets" and inline code.
+::: {.column width="40%"}
+:::
+:::::
 
-Knitted (rendered) view of R code snippet and inline code.
+## blocks of R code with "code chunks" and inline code.
+
+Knitted (rendered) view of R code chunk and inline code.
+
+:::: columns
+::: {.column width="70%"}
 ![](./images/renderedSnippet.png)
+:::
+::::
 
 ## "knitting" your document to HTML or MS-Word.
 
-This button ![](./images/knit.png) will will turn you R Markdown into
+This button ![](./images/knit.png) will will turn your R Markdown into
 whatever output you've chosen. Usually, this will be `word_document` or
 `html_document`.
 
 Remember the YAML header:
 
+:::: columns
+::: {.column width="50%"}
 ```         
 ---
 title: "My Sample Markdown Document"
@@ -163,12 +277,21 @@ date: "`r Sys.Date()`"
 output: word_document
 ---
 ```
+:::
+::::
 
-## Formula notation {.larger}
+## Formula notation 
 
+::::: columns
+::: {.column width="15%"}
+:::
+
+::: {.column width="*"}
+<p style="display:inline-block; line-height:250% ">
+</p>
 Formulas are given as $\LaTeX$ between two dollar signs thus:
 
-```         
+```
 $\hat{y}=\beta_0+\beta_1x+\epsilon$
 ```
 
@@ -185,6 +308,8 @@ $\LaTeX$
 yields
 
 $\LaTeX$
+:::
+:::::
 
 ## Tables of contents
 
@@ -209,9 +334,15 @@ your document. If your output target is `word_document`, it will be
 slightly more elaborate.
 
 The TOC is constructed from all the lines using header style (#, ##,
-###, etc.) ![](./images/htmlTOC.png)
+###, etc.)
 
-## Citations
+:::: columns
+::: {.column width="70%"}
+![](./images/htmlTOC.png)
+:::
+::::
+
+## Citations {.smaller}
 
 To use citations and automatically generate a Works Cited at the end of
 the document, you can change your YAML like this. This isn't the only
@@ -241,18 +372,23 @@ format.
 
 ## Citations
 
-Citations can be added by nesting it in a `[@blah]` construction like
-this
+Citations can be added by nesting it in a construction like `[@blah]` .
 
 ```         
 Here is some text in which I will cite references, such as [@olson2020] or perhaps @bowser2006 or a particular page of [@aragon2020, Page 34-55] or cite a DOI [@hodgson2006]
 ```
 
+::::: columns
+::: {.column width="40%"}
+![](./images/insertingFromDOI.png){fig-align="left"}
+:::
+
+::: {.column width="60%"}
 Citations that aren't in a bibliography file can be added with the DOI,
 but that requires using the editor in visual mode, and choosing
 Insert/Citation/From DOI.
-
-![](./images/insertingFromDOI.png){fig-align="left" width="100%"}
+:::
+:::::
 
 ## Citations
 
@@ -262,6 +398,13 @@ list show up something like this. You will probably want to put a
 be immediately before the reference list.
 
 ![](./images/renderedCites.png){fig-align="left" width="100%"}
+
+## Cross references
+
+- In your paper, if you want to have references in your text to specific tables or figures in your documents rather than just "in the figure above", you'll need to know how to do cross-references.
+- Plain vanilla R Markdown can't do internal cross-references. To do that, we'll have to install the `bookdown` package.
+- After Bookdown is installed, you'll have to modify your `YAML` header to use it.
+- Cross-referencing will be explained.
 
 ## Using a wordcount plugin to R Studio for word counts
 

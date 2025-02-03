@@ -9,9 +9,9 @@
   {
     "objectID": "index.html#overview",
     "href": "index.html#overview",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\n\n\n\n\n\nTLDR: How to put the text and R output from your work into a single, unified document, and save it as an MS-Word file."
+    "text": "Overview:\n\n\n\n\n\n\n\ntl;dr:\n\n\nHow to put the text and R output of your work in R Studio into a single, unified document, and save it as an MS-Word file to turn into Canvas.\n\n\n\n\n\n \n\n\nThis presentation may be found at https://kwmullet.github.io.\n\nIt was written in R Markdown using Quarto in R Studio, and the source is at https://github.com/kwmullet/kwmullet.github.io.\n\nPlease feel free to send me any questions, corrections, or comments we don’t get to in class at email kwm@unm.edu."
   },
   {
     "objectID": "index.html#overview-cont.",
@@ -30,9 +30,9 @@
   {
     "objectID": "index.html#overview-1",
     "href": "index.html#overview-1",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use it to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\nblocks of R code with “code snippets”"
+    "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use it to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\nblocks of R code with “code chunks”"
   },
   {
     "objectID": "index.html#overview-_cont.",
@@ -44,37 +44,37 @@
   {
     "objectID": "index.html#what-is-r-markdown-and-why-use-it",
     "href": "index.html#what-is-r-markdown-and-why-use-it",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "What is R Markdown and why use it?",
     "text": "What is R Markdown and why use it?\n\n“Literate Programming”\n\nIn 1962, grad student Donald Knuth was approached by a publisher to write a book on compiler (computer language) design. In response (watch for more scope creep), he proposed a 12-chapter book on computer programming. The project eventually balooned to a seven volume set called “The Art of Computer Programming”, only four of which have been published to date (he’s currently 86). Knuth, who later became a CS professor at Stanford, found the typesetting tools completely (to him) inadequate to convey the math formulas in the books, so he suspended work to invent \\(\\TeX\\) (not unlike Newton inventing calculus to describe physics). Once he did that, he invented something called “literate programming” where code, output, and the text of an article or book could co-exist on the same document."
   },
   {
     "objectID": "index.html#what-needs-to-be-in-place-to-use-it-to-generate-ms-word-documents",
     "href": "index.html#what-needs-to-be-in-place-to-use-it-to-generate-ms-word-documents",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "What needs to be in place to use it to generate MS-Word documents?",
     "text": "What needs to be in place to use it to generate MS-Word documents?\n\n\nOn a fresh or fully-functional installation of R and R Studio which has never created an R Markdown document, the user will be prompted to approve installation of several packages the first time they create an R Markdown document."
   },
   {
     "objectID": "index.html#the-structure-of-an-r-markdown-document",
     "href": "index.html#the-structure-of-an-r-markdown-document",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "The structure of an R Markdown document",
-    "text": "The structure of an R Markdown document\nYAML header – You’ll may add more here over time\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: word_document\n---\nSetup block and snippet flags\n\nAfter the YAML and the setup block, you can put an arbitrary amount of markup around R (or other languages, but that’s “beyond the scope” snippets."
+    "text": "The structure of an R Markdown document\n\nAt the very top of your R markdown document:\n\nYAML header (Yet Another Markdown Language)\n\nYou may add more to it over time\nStart and end with a line of three dashes\nBlank line after the closing three dashes\n\n\n\n\n\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\n1date: \"`r Sys.Date()`\"\n2output: word_document\n---\n\n1\n\nThis construction will give you a dynamic date each time you knit your document.\n\n2\n\nUsually, this will be word_document or html_document"
   },
   {
     "objectID": "index.html#visual-and-source-editor-modes",
     "href": "index.html#visual-and-source-editor-modes",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Visual and source editor modes",
-    "text": "Visual and source editor modes\nDifferences between the source and visual editor modes"
+    "text": "Visual and source editor modes\n\n\n\n\n\n\n\n\nToggle between source and visual editor with the button at the upper left of the editing pane."
   },
   {
     "objectID": "index.html#markdown",
     "href": "index.html#markdown",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Markdown",
-    "text": "Markdown\nHeader levels Lists Bold, italics links images\n\n\n\n\n\n\nMarkdown"
+    "text": "Markdown\nHeader levels"
   },
   {
     "objectID": "index.html#blocks-of-r-code-with-code-snippets",
@@ -86,21 +86,21 @@
   {
     "objectID": "index.html#formula-notation",
     "href": "index.html#formula-notation",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Formula notation",
-    "text": "Formula notation\nFormulas are given as \\(\\LaTeX\\) between two dollar signs thus:\n$\\hat{y}=\\beta_0+\\beta_1x+\\epsilon$\nyields\n\\(\\hat{y}=\\beta_0+\\beta_1x+\\epsilon\\)\nBy the way,\n$\\LaTeX$\nyields\n\\(\\LaTeX\\)"
+    "text": "Formula notation\n\n\n\n\n\n\nFormulas are given as \\(\\LaTeX\\) between two dollar signs thus:\n$\\hat{y}=\\beta_0+\\beta_1x+\\epsilon$\nyields\n\\(\\hat{y}=\\beta_0+\\beta_1x+\\epsilon\\)\nBy the way,\n$\\LaTeX$\nyields\n\\(\\LaTeX\\)"
   },
   {
     "objectID": "index.html#tables-of-contents",
     "href": "index.html#tables-of-contents",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Tables of contents",
     "text": "Tables of contents\nIf you modify your YAML header like this…\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: \n  html_document:\n    toc: true\n    toc_depth: 2\n---"
   },
   {
     "objectID": "index.html#citations",
     "href": "index.html#citations",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Citations",
     "text": "Citations\nTo use citations and automatically generate a Works Cited at the end of the document, you can change your YAML like this. This isn’t the only approach, but this is what I’ve used.\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: \n  html_document:\n    toc: true\n    toc_depth: 2\nheader-includes:\n- \\usepackage{apacite}\n- \\bibliographystyle{apacite}\nbibliography: references.bib\n---\nNote that I’ve added a new section header-includes: and in it, I’ve told knit to load the \\(\\LaTeX\\) package apacite for APA citations, and told it to use APA bibliographic style. I’ve also added a section bibliography: to tell it what file has my references, in Bibtex format."
   },
@@ -114,42 +114,42 @@
   {
     "objectID": "index.html#using-a-wordcount-plugin-to-r-studio-for-word-counts",
     "href": "index.html#using-a-wordcount-plugin-to-r-studio-for-word-counts",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Using a wordcount plugin to R Studio for word counts",
     "text": "Using a wordcount plugin to R Studio for word counts\ndemo using this plugin."
   },
   {
     "objectID": "index.html#fine-tuning-your-ms-word-document",
     "href": "index.html#fine-tuning-your-ms-word-document",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Fine-tuning your MS-Word document",
-    "text": "Fine-tuning your MS-Word document\ndemo\n\n\n\nIntroduction to R Markdown (kwm@unm.edu)"
+    "text": "Fine-tuning your MS-Word document\ndemo\n\n\n\nIntro to R Markdown (kwm@unm.edu)"
   },
   {
     "objectID": "index.html#knitting-your-document-to-html-or-ms-word.",
     "href": "index.html#knitting-your-document-to-html-or-ms-word.",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "“knitting” your document to HTML or MS-Word.",
-    "text": "“knitting” your document to HTML or MS-Word.\nThis button  will will turn you R Markdown into whatever output you’ve chosen. Usually, this will be word_document or html_document.\nRemember the YAML header:\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: word_document\n---"
+    "text": "“knitting” your document to HTML or MS-Word.\nThis button  will will turn your R Markdown into whatever output you’ve chosen. Usually, this will be word_document or html_document.\nRemember the YAML header:\n\n\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: word_document\n---"
   },
   {
     "objectID": "index.html#overview-2",
     "href": "index.html#overview-2",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Overview:",
     "text": "Overview:\n\n\nFormula notation\nTables of contents\nCitations\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
   },
   {
     "objectID": "index.html#what-is-r-markdown-and-why-use-it-1",
     "href": "index.html#what-is-r-markdown-and-why-use-it-1",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "What is R Markdown and why use it?",
     "text": "What is R Markdown and why use it?\n\nR\n\nIn 1993, Ross Ihaka and Robert Gentleman wrote a statistical programming language that would be an update to the then-popular “S”. They named it R not only to promote it as a successor to S, but because it was the first letter of each of their names."
   },
   {
     "objectID": "index.html#what-is-r-markdown-and-why-use-it-2",
     "href": "index.html#what-is-r-markdown-and-why-use-it-2",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "What is R Markdown and why use it?",
     "text": "What is R Markdown and why use it?\n\nMarkup Languages\n\nSince the early 1960s, so-called “markup” languages have been developed and used to add structure and control appearance of plain text documents. Among them are HyperText Markup Language (HTML), \\(\\TeX\\)/\\(\\LaTeX\\), and Yet Another Markup Language (YAML).\nR-Markdown is both a pun (marking down instead of up) and a promotion of it being a next-generation mark(up|down) language."
   },
@@ -170,22 +170,64 @@
   {
     "objectID": "index.html#tables-of-contents-1",
     "href": "index.html#tables-of-contents-1",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Tables of contents",
     "text": "Tables of contents\n…you will get a Table of Contents something like this at the top of your document. If your output target is word_document, it will be slightly more elaborate.\nThe TOC is constructed from all the lines using header style (#, ##, ###, etc.)"
   },
   {
     "objectID": "index.html#citations-1",
     "href": "index.html#citations-1",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Citations",
-    "text": "Citations\nCitations can be added by nesting it in a [@blah] construction like this\nHere is some text in which I will cite references, such as [@olson2020] or perhaps @bowser2006 or a particular page of [@aragon2020, Page 34-55] or cite a DOI [@hodgson2006]\nCitations that aren’t in a bibliography file can be added with the DOI, but that requires using the editor in visual mode, and choosing Insert/Citation/From DOI."
+    "text": "Citations\nCitations can be added by nesting it in a construction like [@blah] .\nHere is some text in which I will cite references, such as [@olson2020] or perhaps @bowser2006 or a particular page of [@aragon2020, Page 34-55] or cite a DOI [@hodgson2006]\n\n\n\n\n\n\n\n\nCitations that aren’t in a bibliography file can be added with the DOI, but that requires using the editor in visual mode, and choosing Insert/Citation/From DOI."
   },
   {
     "objectID": "index.html#citations-2",
     "href": "index.html#citations-2",
-    "title": "Introduction to R Markdown",
+    "title": "Intro to R Markdown",
     "section": "Citations",
     "text": "Citations\nOnce you knit your document, you should see your citations and reference list show up something like this. You will probably want to put a # Works cited or equivalent at the bottom of your document so it will be immediately before the reference list."
+  },
+  {
+    "objectID": "index.html#the-structure-of-an-r-markdown-document-1",
+    "href": "index.html#the-structure-of-an-r-markdown-document-1",
+    "title": "Intro to R Markdown",
+    "section": "The structure of an R Markdown document",
+    "text": "The structure of an R Markdown document\nSetup block and code chunk flags\nThe setup block is typically the first r code chunk in an r markdown document.\n\n\n\n\n\n\n\n\n\n\nWhat is a code chunk?\n\n\nA code chunk is a block of executable code that begins and ends with a line of three backticks (```). The first line of backticks ends with braces which indicate the language for the chunk (typically r ), a name for the code chunk, and however many options you care to set. Between the first and last lines is executable R code.\n\n\n\n\nAfter the YAML and the setup block, you can put an arbitrary amount of markup and R code chunks."
+  },
+  {
+    "objectID": "index.html#blocks-of-r-code-with-code-chunks-and-inline-code.",
+    "href": "index.html#blocks-of-r-code-with-code-chunks-and-inline-code.",
+    "title": "Intro to R Markdown",
+    "section": "blocks of R code with “code chunks” and inline code.",
+    "text": "blocks of R code with “code chunks” and inline code.\nSource view of R code chunk and inline code."
+  },
+  {
+    "objectID": "index.html#markdown-1",
+    "href": "index.html#markdown-1",
+    "title": "Intro to R Markdown",
+    "section": "Markdown",
+    "text": "Markdown\nlists, bold, italics, links, and images\n\n\n- unordered list\n- of items\n- in no\n  - order\n    - whatsoever\n\n1.  ordered list\n1.  with some **bold** and\n1.  some *itallic*\n\nan image  ![](./images/knit.png)\nand a link to [the MPP page](http://mpp.unm.edu/).\n\n\nunordered list\nof items\nin no\n\norder\n\nwhatsoever\n\n\n\n\nordered list\nwith some bold and\nsome itallic\n\nan image  and a link to the MPP page."
+  },
+  {
+    "objectID": "index.html#markdown-2",
+    "href": "index.html#markdown-2",
+    "title": "Introduction to R Markdown",
+    "section": "Markdown",
+    "text": "Markdown"
+  },
+  {
+    "objectID": "index.html#blocks-of-r-code-with-code-chunks-and-inline-code.-1",
+    "href": "index.html#blocks-of-r-code-with-code-chunks-and-inline-code.-1",
+    "title": "Intro to R Markdown",
+    "section": "blocks of R code with “code chunks” and inline code.",
+    "text": "blocks of R code with “code chunks” and inline code.\nKnitted (rendered) view of R code chunk and inline code."
+  },
+  {
+    "objectID": "index.html#cross-references",
+    "href": "index.html#cross-references",
+    "title": "Intro to R Markdown",
+    "section": "Cross references",
+    "text": "Cross references\n\nIn your paper, if you want to have references in your text to specific tables or figures in your documents rather than just “in the figure above”, you’ll need to know how to do cross-references.\nPlain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the bookdown package.\nAfter Bookdown is installed, you’ll have to modify your YAML header to use it.\nCross-referencing will be explained."
   }
 ]
