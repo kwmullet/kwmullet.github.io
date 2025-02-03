@@ -14,7 +14,7 @@ format:
 
 ## Overview: {.smaller}
 
-::: {.callout-tip title="tl;dr:"}
+::: {.callout-note title="tl;dr:"}
 How to put the text and R output of your work in R Studio into a single,
 unified document, and save it as an MS-Word file to turn into Canvas.
 :::
@@ -56,6 +56,7 @@ don't get to in class at email `kwm@unm.edu`.
 -   Formula notation
 -   Tables of contents
 -   Citations
+-   Cross-references
 -   Using a wordcount plugin to R Studio for word counts
 -   Fine-tuning your MS-Word document
 :::
