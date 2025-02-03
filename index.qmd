@@ -44,11 +44,11 @@ don't get to in class at email `kwm@unm.edu`.
 
 ::: incremental
 -   What is R Markdown and why use it?
--   What needs to be in place to use it to generate MS-Word documents?
+-   What needs to be in place to use R Studio to generate MS-Word documents?
 -   The structure of an R Markdown document
 -   Visual and source editor modes
 -   Markdown
--   blocks of R code with "**code chunks**"
+-   "**code chunks**" and inline code
 :::
 
 ## Overview:
@@ -97,7 +97,7 @@ don't get to in class at email `kwm@unm.edu`.
     -   R-Markdown is both a pun (marking down instead of up) and a
         promotion of it being a next-generation mark(up\|down) language.
 
-## What needs to be in place to use it to generate MS-Word documents? {.smaller .center}
+## What needs to be in place to use R Studio to generate MS-Word documents? {.smaller .center}
 
 ::::: columns
 ::: {.column width="30%"}
@@ -238,7 +238,7 @@ page](http://mpp.unm.edu/).
 :::
 :::::
 
-## blocks of R code with "code chunks" and inline code.
+## "code chunks" and inline code.
 
 Source view of R code chunk and inline code.
 
@@ -251,7 +251,7 @@ Source view of R code chunk and inline code.
 :::
 :::::
 
-## blocks of R code with "code chunks" and inline code.
+## "code chunks" and inline code.
 
 Knitted (rendered) view of R code chunk and inline code.
 

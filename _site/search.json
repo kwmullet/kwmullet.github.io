@@ -32,7 +32,7 @@
     "href": "index.html#overview-1",
     "title": "Intro to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use it to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\nblocks of R code with “code chunks”"
+    "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use R Studio to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\n“code chunks” and inline code"
   },
   {
     "objectID": "index.html#overview-_cont.",
@@ -229,5 +229,26 @@
     "title": "Intro to R Markdown",
     "section": "Cross references",
     "text": "Cross references\n\nIn your paper, if you want to have references in your text to specific tables or figures in your documents rather than just “in the figure above”, you’ll need to know how to do cross-references.\nPlain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the bookdown package.\nAfter Bookdown is installed, you’ll have to modify your YAML header to use it.\nCross-referencing will be explained."
+  },
+  {
+    "objectID": "index.html#code-chunks-and-inline-code.",
+    "href": "index.html#code-chunks-and-inline-code.",
+    "title": "Intro to R Markdown",
+    "section": "“code chunks” and inline code.",
+    "text": "“code chunks” and inline code.\nSource view of R code chunk and inline code."
+  },
+  {
+    "objectID": "index.html#code-chunks-and-inline-code.-1",
+    "href": "index.html#code-chunks-and-inline-code.-1",
+    "title": "Intro to R Markdown",
+    "section": "“code chunks” and inline code.",
+    "text": "“code chunks” and inline code.\nKnitted (rendered) view of R code chunk and inline code."
+  },
+  {
+    "objectID": "index.html#what-needs-to-be-in-place-to-use-r-studio-to-generate-ms-word-documents",
+    "href": "index.html#what-needs-to-be-in-place-to-use-r-studio-to-generate-ms-word-documents",
+    "title": "Intro to R Markdown",
+    "section": "What needs to be in place to use R Studio to generate MS-Word documents?",
+    "text": "What needs to be in place to use R Studio to generate MS-Word documents?\n\n\nOn a fresh or fully-functional installation of R and R Studio which has never created an R Markdown document, the user will be prompted to approve installation of several packages the first time they create an R Markdown document."
   }
 ]
