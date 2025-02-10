@@ -12,38 +12,32 @@ format:
       theme: blood
 ---
 
-## Overview: {.smaller}
+## Overview{.smaller}
 
-::: {.callout-note}
+:::{.callout-tip}
 ## tl;dr:
-How to put the text and R output of your work in R Studio into a single,
+How to put the text, R code, and R output of your work in R Studio into a single,
 unified document, and save it as an MS-Word file to turn into Canvas.
+
 :::
-
-<p style="display:inline-block; Yline-height:500% ">
-
- 
-
-</p>
-
-<p>
-
-This presentation may be found at `https://kwmullet.github.io`.
-
-<hr >
-
-It was written in R Markdown using Quarto in R Studio, and the source is
-at `https://github.com/kwmullet/kwmullet.github.io`.
 
 <hr>
 
+This presentation may be found at `https://kwmullet.github.io`.
+<hr>
+
+It was written in R Markdown using Quarto in R Studio, and the source is
+at `https://github.com/kwmullet/kwmullet.github.io`.
+<hr>
 Please feel free to send me any questions, corrections, or comments we
 don't get to in class at email `kwm@unm.edu`.
 
+
 ## Overview:
 
-::: incremental
 -   What is R Markdown and why use it?
+
+::: incremental
 -   What needs to be in place to use R Studio to generate MS-Word documents?
 -   The structure of an R Markdown document
 -   Visual and source editor modes
@@ -53,12 +47,12 @@ don't get to in class at email `kwm@unm.edu`.
 
 ## Overview:
 
-::: incremental
 -   Formula notation
+
+::: incremental
 -   Tables of contents
 -   Citations
 -   Cross-references
--   Using a wordcount plugin to R Studio for word counts
 -   Fine-tuning your MS-Word document
 :::
 
@@ -173,7 +167,7 @@ markup and R code chunks.
 :::
 
 ::: {.column width="25%"}
-![](./images/visual%20editor.png)
+![](./images/visualEditor.png)
 :::
 
 ::: {.column width="40%"}
@@ -289,8 +283,6 @@ output: word_document
 :::
 
 ::: {.column width="*"}
-<p style="display:inline-block; line-height:250% ">
-</p>
 Formulas are given as $\LaTeX$ between two dollar signs thus:
 
 ```
@@ -347,20 +339,15 @@ The TOC is constructed from all the lines using header style (`#`, `##`, `###`, 
 
 To use citations and automatically generate a Works Cited at the end of
 the document, you can change your YAML like this. This isn't the only
-approach, but this is what I've used.
+approach, but this is what I've used.^[I need to update this to Chicago citation format to be consistent with Professor Rocca's Craft of Policy course]
 
 ```         
 ---
 title: "My Sample Markdown Document"
 author: "Eeyore Namehere"
 date: "`r Sys.Date()`"
-output: 
-  html_document:
-    toc: true
-    toc_depth: 2
-header-includes:
-- \usepackage{apacite}
-- \bibliographystyle{apacite}
+output:
+  bookdown::html_document2: default
 bibliography: references.bib
 ---
 ```
@@ -400,9 +387,9 @@ be immediately before the reference list.
 
 ![](./images/renderedCites.png){fig-align="left" width="100%"}
 
-## Cross-references
+## Cross-references{.smaller}
 
-- In your paper, if you want to have references in your text to specific tables or figures in your documents rather than just "in the figure above", you'll need to know how to do cross-references.
+- In your paper, if you want to have references in your text to specific tables or figures elsewhere in your document rather than just "in the figure above", you'll need to know how to do cross-references.
 - Plain vanilla R Markdown can't do internal cross-references. To do that, we'll have to install the `bookdown` package.
 - After Bookdown is installed, you'll have to modify your `YAML` header to use it.
 - Cross-referencing will be explained.
@@ -430,23 +417,130 @@ R Studio will complain if you don't have the packages installed to compile new p
 
 ::::
 
-
 ## Cross-references{.smaller}
 #### Changing your YAML header for Bookdown
+To use `bookdown`, you need to change your document's `YAML` header.
+Here's an example of one that works.  This is to knit to an HTML document with the output target of `bookdown::html_document2`, but to knit to an MS-Word document, use `bookdown::word_document2` instead.
+
+:::: columns
+:::{.column width="60%"}
+![](./images/yamlWithBookdown.png)
+:::
+:::: 
+
+## Cross-references{.smaller}
+#### figure cross-references
+Names and cross-references to figures are typically used in both the caption to the figure and a cross-reference to a figure in the document text.
+
+- define a reference in a figure code chunk
+
+::::columns
+:::{.column width="90%"}
+
+` ```{r pressure, echo=FALSE, fig.cap='Temp v. Pressure'} `<br>
+` plot(pressure) `<br>
+` ``` `<br>
+The label "pressure" is the name used for the figure. "Temp v. Pressure" is the text used in the caption.
+
+- To refer to the figure in your text, use the label like this: `\@ref(fig:pressure)`
+
+:::
+::::
+
+## Cross-references{.smaller}
+#### figure cross-references
+Source to label, caption, and cross-reference a figure...
+
+::::columns
+
+:::{.column width="80%"}
+
+![](./images/figReferenceSource.png)
+
+:::
+
+::::
 
 
-{{<lipsum 1>}}
+## Cross-references{.smaller}
+
+::::columns
+
+:::{.column width="50%"}
+
+#### figure cross-references
+...would be rendered like this.
+
+:::
+
+:::{.column width="50%"}
+
+![](./images/figReferenceRendered.png)
+
+:::
+
+::::
 
 
-## Cross-referencing{.smaller}
+
+## Cross-references{.smaller}
+#### table cross-references
+- Table cross-references are a little different.  Within a code chunk, you need to render your table using `knitr::kable` something like this, so you can give it a caption:<p>
+
+` ```{r cars, echo=FALSE} `<br>
+` knitr::kable( ` <br>
+`   summary(cars), ` <br>
+`   caption = "This is the summary of the cars table", ` <br>
+`   booktabs = TRUE ` <br>
+` ) ` <br>
+` ```  ` <br>
+- The cross-references for tables, though, are essentially the same:<p>
+` \@ref(tab:cars)`
+
+## Cross-references{.smaller}
+#### table cross-references
+
+::::columns
+
+:::{.column width="30%"}
+
+The source for labeling, captioning, and cross-referencing a table would be something like this...
+
+:::
 
 
-{{<lipsum 1>}}
+:::{.column width="70%"}
 
-## Using a wordcount plugin to R Studio for word counts
+![](./images/tableReferenceSource.png)
 
-demo using [this
-plugin](%22https://github.com/benmarwick/wordcountaddin%22).
+:::
+
+::::
+
+## Cross-references{.smaller}
+#### table cross-references
+
+::::columns
+
+:::{.column width="70%"}
+
+![](./images/tableReferenceRendered.png)
+
+:::
+
+:::{.column width="30%"}
+
+...and would be rendered something like this.  
+
+:::
+
+
+
+
+
+
+::::
+
 
 ## Fine-tuning your MS-Word document
 
