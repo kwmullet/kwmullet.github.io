@@ -209,8 +209,8 @@ Kevin Mullet
   <p class="date">2025-02-03</p>
 </section>
 <section id="overview" class="slide level2 smaller">
-<h2>Overview:</h2>
-<div class="callout callout-note callout-titled callout-style-default">
+<h2>Overview</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
@@ -219,25 +219,24 @@ Kevin Mullet
 <p><strong>tl;dr:</strong></p>
 </div>
 <div class="callout-content">
-<p>How to put the text and R output of your work in R Studio into a single, unified document, and save it as an MS-Word file to turn into Canvas.</p>
+<p>How to put the text, R code, and R output of your work in R Studio into a single, unified document, and save it as an MS-Word file to turn into Canvas.</p>
 </div>
 </div>
 </div>
-<p style="display:inline-block; Yline-height:500% ">
-</p><p>&nbsp;</p>
-<p></p>
-<p>
-</p><p>This presentation may be found at <code>https://kwmullet.github.io</code>.</p>
 <hr>
-<p>It was written in R Markdown using Quarto in R Studio, and the source is at <code>https://github.com/kwmullet/kwmullet.github.io</code>.</p>
+This presentation may be found at <code>https://kwmullet.github.io</code>.
+<hr>
+It was written in R Markdown using Quarto in R Studio, and the source is at <code>https://github.com/kwmullet/kwmullet.github.io</code>.
 <hr>
 <p>Please feel free to send me any questions, corrections, or comments we don’t get to in class at email <code>kwm@unm.edu</code>.</p>
 </section>
 <section id="overview-1" class="slide level2">
 <h2>Overview:</h2>
+<ul>
+<li>What is R Markdown and why use it?</li>
+</ul>
 <div>
 <ul>
-<li class="fragment">What is R Markdown and why use it?</li>
 <li class="fragment">What needs to be in place to use R Studio to generate MS-Word documents?</li>
 <li class="fragment">The structure of an R Markdown document</li>
 <li class="fragment">Visual and source editor modes</li>
@@ -248,13 +247,14 @@ Kevin Mullet
 </section>
 <section id="overview-2" class="slide level2">
 <h2>Overview:</h2>
+<ul>
+<li>Formula notation</li>
+</ul>
 <div>
 <ul>
-<li class="fragment">Formula notation</li>
 <li class="fragment">Tables of contents</li>
 <li class="fragment">Citations</li>
 <li class="fragment">Cross-references</li>
-<li class="fragment">Using a wordcount plugin to R Studio for word counts</li>
 <li class="fragment">Fine-tuning your MS-Word document</li>
 </ul>
 </div>
@@ -359,7 +359,7 @@ Kevin Mullet
 <div class="column" style="width:35%;">
 <p><img data-src="./images/sourceEditor.png"></p>
 </div><div class="column" style="width:25%;">
-<p><img data-src="./images/visual editor.png"></p>
+<p><img data-src="./images/visualEditor.png"></p>
 </div><div class="column" style="width:40%;">
 
 </div></div>
@@ -452,8 +452,6 @@ output: word_document
 <div class="column" style="width:15%;">
 
 </div><div class="column" style="width:*;">
-<p style="display:inline-block; line-height:250% ">
-</p>
 <p>Formulas are given as <span class="math inline">\(\LaTeX\)</span> between two dollar signs thus:</p>
 <pre><code>$\hat{y}=\beta_0+\beta_1x+\epsilon$</code></pre>
 <p>yields</p>
@@ -488,22 +486,17 @@ output:
 </section>
 <section id="citations" class="slide level2 smaller">
 <h2>Citations</h2>
-<p>To use citations and automatically generate a Works Cited at the end of the document, you can change your YAML like this. This isn’t the only approach, but this is what I’ve used.</p>
+<p>To use citations and automatically generate a Works Cited at the end of the document, you can change your YAML like this. This isn’t the only approach, but this is what I’ve used.<sup>1</sup></p>
 <pre><code>---
 title: "My Sample Markdown Document"
 author: "Eeyore Namehere"
 date: "`r Sys.Date()`"
-output: 
-  html_document:
-    toc: true
-    toc_depth: 2
-header-includes:
-- \usepackage{apacite}
-- \bibliographystyle{apacite}
+output:
+  bookdown::html_document2: default
 bibliography: references.bib
 ---</code></pre>
 <p>Note that I’ve added a new section <code>header-includes:</code> and in it, I’ve told knit to load the <span class="math inline">\(\LaTeX\)</span> package <code>apacite</code> for APA citations, and told it to use APA bibliographic style. I’ve also added a section <code>bibliography:</code> to tell it what file has my references, in Bibtex format.</p>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>I need to update this to Chicago citation format to be consistent with Professor Rocca’s Craft of Policy course</p></li></ol></aside></section>
 <section id="citations-1" class="slide level2">
 <h2>Citations</h2>
 <p>Citations can be added by nesting it in a construction like <code>[@blah]</code> .</p>
@@ -524,10 +517,10 @@ bibliography: references.bib
 <p>Once you knit your document, you should see your citations and reference list show up something like this. You will probably want to put a <code># Works cited</code> or equivalent at the bottom of your document so it will be immediately before the reference list.</p>
 
 <img data-src="./images/renderedCites.png" class="quarto-figure quarto-figure-left r-stretch" style="width:100.0%"></section>
-<section id="cross-references" class="slide level2">
+<section id="cross-references" class="slide level2 smaller">
 <h2>Cross-references</h2>
 <ul>
-<li>In your paper, if you want to have references in your text to specific tables or figures in your documents rather than just “in the figure above”, you’ll need to know how to do cross-references.</li>
+<li>In your paper, if you want to have references in your text to specific tables or figures elsewhere in your document rather than just “in the figure above”, you’ll need to know how to do cross-references.</li>
 <li>Plain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the <code>bookdown</code> package.</li>
 <li>After Bookdown is installed, you’ll have to modify your <code>YAML</code> header to use it.</li>
 <li>Cross-referencing will be explained.</li>
@@ -547,15 +540,76 @@ bibliography: references.bib
 <section id="cross-references-2" class="slide level2 smaller">
 <h2>Cross-references</h2>
 <h4 id="changing-your-yaml-header-for-bookdown">Changing your YAML header for Bookdown</h4>
-<p>Etiam congue quam eget velit convallis, eu sagittis orci vestibulum. Vestibulum at massa turpis. Curabitur ornare ex sed purus vulputate, vitae porta augue rhoncus. Phasellus auctor suscipit purus, vel ultricies nunc. Nunc eleifend nulla ac purus volutpat, id fringilla felis aliquet. Duis vitae porttitor nibh, in rhoncus risus. Vestibulum a est vitae est tristique vehicula. Proin mollis justo id est tempus hendrerit. Praesent suscipit placerat congue. Aliquam eu elit gravida, consequat augue non, ultricies sapien. Nunc ultricies viverra ante, sit amet vehicula ante volutpat id. Etiam tempus purus vitae tellus mollis viverra. Donec at ornare mauris. Aliquam sodales hendrerit ornare. Suspendisse accumsan lacinia sapien, sit amet imperdiet dui molestie ut.</p>
+<p>To use <code>bookdown</code>, you need to change your document’s <code>YAML</code> header. Here’s an example of one that works. This is to knit to an HTML document with the output target of <code>bookdown::html_document2</code>, but to knit to an MS-Word document, use <code>bookdown::word_document2</code> instead.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="./images/yamlWithBookdown.png"></p>
+</div></div>
 </section>
-<section id="cross-referencing" class="slide level2 smaller">
-<h2>Cross-referencing</h2>
-<p>Duis urna urna, pellentesque eu urna ut, malesuada bibendum dolor. Suspendisse potenti. Vivamus ornare, arcu quis molestie ultrices, magna est accumsan augue, auctor vulputate erat quam quis neque. Nullam scelerisque odio vel ultricies facilisis. Ut porta arcu non magna sagittis lacinia. Cras ornare vulputate lectus a tristique. Pellentesque ac arcu congue, rhoncus mi id, dignissim ligula.</p>
+<section id="cross-references-3" class="slide level2 smaller">
+<h2>Cross-references</h2>
+<h4 id="figure-cross-references">figure cross-references</h4>
+<p>Names and cross-references to figures are typically used in both the caption to the figure and a cross-reference to a figure in the document text.</p>
+<ul>
+<li>define a reference in a figure code chunk</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:90%;">
+<p><code>```{r pressure, echo=FALSE, fig.cap='Temp v. Pressure'}</code><br> <code>plot(pressure)</code><br> <code>```</code><br> The label “pressure” is the name used for the figure. “Temp v. Pressure” is the text used in the caption.</p>
+<ul>
+<li>To refer to the figure in your text, use the label like this: <code>\@ref(fig:pressure)</code></li>
+</ul>
+</div></div>
 </section>
-<section id="using-a-wordcount-plugin-to-r-studio-for-word-counts" class="slide level2">
-<h2>Using a wordcount plugin to R Studio for word counts</h2>
-<p>demo using <a href="&quot;https://github.com/benmarwick/wordcountaddin&quot;">this plugin</a>.</p>
+<section id="cross-references-4" class="slide level2 smaller">
+<h2>Cross-references</h2>
+<h4 id="figure-cross-references-1">figure cross-references</h4>
+<p>Source to label, caption, and cross-reference a figure…</p>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="./images/figReferenceSource.png"></p>
+</div></div>
+</section>
+<section id="cross-references-5" class="slide level2 smaller">
+<h2>Cross-references</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="figure-cross-references-2">figure cross-references</h4>
+<p>…would be rendered like this.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./images/figReferenceRendered.png"></p>
+</div></div>
+</section>
+<section id="cross-references-6" class="slide level2 smaller">
+<h2>Cross-references</h2>
+<h4 id="table-cross-references">table cross-references</h4>
+<ul>
+<li>Table cross-references are a little different. Within a code chunk, you need to render your table using <code>knitr::kable</code> something like this, so you can give it a caption:
+<p></p></li>
+</ul>
+<code>```{r cars, echo=FALSE}</code><br> <code>knitr::kable(</code> <br> <code>summary(cars),</code> <br> <code>caption = "This is the summary of the cars table",</code> <br> <code>booktabs = TRUE</code> <br> <code>)</code> <br> <code>```</code> <br> - The cross-references for tables, though, are essentially the same:
+<p>
+</p><p><code>\@ref(tab:cars)</code></p>
+</section>
+<section id="cross-references-7" class="slide level2 smaller">
+<h2>Cross-references</h2>
+<h4 id="table-cross-references-1">table cross-references</h4>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p>The source for labeling, captioning, and cross-referencing a table would be something like this…</p>
+</div><div class="column" style="width:70%;">
+<p><img data-src="./images/tableReferenceSource.png"></p>
+</div></div>
+</section>
+<section id="cross-references-8" class="slide level2 smaller">
+<h2>Cross-references</h2>
+<h4 id="table-cross-references-2">table cross-references</h4>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="./images/tableReferenceRendered.png"></p>
+</div><div class="column" style="width:30%;">
+<p>…and would be rendered something like this.</p>
+</div></div>
 </section>
 <section id="fine-tuning-your-ms-word-document" class="slide level2">
 <h2>Fine-tuning your MS-Word document</h2>
@@ -563,6 +617,7 @@ bibliography: references.bib
 
 
 </section>
+
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

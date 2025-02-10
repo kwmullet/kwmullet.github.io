@@ -1,24 +1,52 @@
 [
   {
+    "objectID": "asdfasdf.html",
+    "href": "asdfasdf.html",
+    "title": "sdafasdfasdf",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "asdfasdf.html#r-markdown",
+    "href": "asdfasdf.html#r-markdown",
+    "title": "sdafasdfasdf",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "asdfasdf.html#including-plots",
+    "href": "asdfasdf.html#including-plots",
+    "title": "sdafasdfasdf",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "index.html#overview",
     "href": "index.html#overview",
     "title": "Intro to R Markdown",
-    "section": "Overview:",
-    "text": "Overview:\n\n\n\n\n\n\ntl;dr:\n\n\nHow to put the text and R output of your work in R Studio into a single, unified document, and save it as an MS-Word file to turn into Canvas.\n\n\n\n\n \n\n\nThis presentation may be found at https://kwmullet.github.io.\n\nIt was written in R Markdown using Quarto in R Studio, and the source is at https://github.com/kwmullet/kwmullet.github.io.\n\nPlease feel free to send me any questions, corrections, or comments we don’t get to in class at email kwm@unm.edu."
+    "section": "Overview",
+    "text": "Overview\n\n\n\n\n\n\ntl;dr:\n\n\nHow to put the text, R code, and R output of your work in R Studio into a single, unified document, and save it as an MS-Word file to turn into Canvas.\n\n\n\n\nThis presentation may be found at https://kwmullet.github.io.\n\nIt was written in R Markdown using Quarto in R Studio, and the source is at https://github.com/kwmullet/kwmullet.github.io.\n\nPlease feel free to send me any questions, corrections, or comments we don’t get to in class at email kwm@unm.edu."
   },
   {
     "objectID": "index.html#overview-1",
     "href": "index.html#overview-1",
     "title": "Intro to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\nWhat is R Markdown and why use it?\nWhat needs to be in place to use R Studio to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\n“code chunks” and inline code"
+    "text": "Overview:\n\nWhat is R Markdown and why use it?\n\n\n\nWhat needs to be in place to use R Studio to generate MS-Word documents?\nThe structure of an R Markdown document\nVisual and source editor modes\nMarkdown\n“code chunks” and inline code"
   },
   {
     "objectID": "index.html#overview-2",
     "href": "index.html#overview-2",
     "title": "Intro to R Markdown",
     "section": "Overview:",
-    "text": "Overview:\n\n\nFormula notation\nTables of contents\nCitations\nCross-references\nUsing a wordcount plugin to R Studio for word counts\nFine-tuning your MS-Word document"
+    "text": "Overview:\n\nFormula notation\n\n\n\nTables of contents\nCitations\nCross-references\nFine-tuning your MS-Word document"
   },
   {
     "objectID": "index.html#what-is-r-markdown-and-why-use-it",
@@ -109,7 +137,7 @@
     "href": "index.html#formula-notation",
     "title": "Intro to R Markdown",
     "section": "Formula notation",
-    "text": "Formula notation\n\n\n\n\n\n\nFormulas are given as \\(\\LaTeX\\) between two dollar signs thus:\n$\\hat{y}=\\beta_0+\\beta_1x+\\epsilon$\nyields\n\\(\\hat{y}=\\beta_0+\\beta_1x+\\epsilon\\)\nBy the way,\n$\\LaTeX$\nyields\n\\(\\LaTeX\\)"
+    "text": "Formula notation\n\n\n\n\nFormulas are given as \\(\\LaTeX\\) between two dollar signs thus:\n$\\hat{y}=\\beta_0+\\beta_1x+\\epsilon$\nyields\n\\(\\hat{y}=\\beta_0+\\beta_1x+\\epsilon\\)\nBy the way,\n$\\LaTeX$\nyields\n\\(\\LaTeX\\)"
   },
   {
     "objectID": "index.html#tables-of-contents",
@@ -130,7 +158,7 @@
     "href": "index.html#citations",
     "title": "Intro to R Markdown",
     "section": "Citations",
-    "text": "Citations\nTo use citations and automatically generate a Works Cited at the end of the document, you can change your YAML like this. This isn’t the only approach, but this is what I’ve used.\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput: \n  html_document:\n    toc: true\n    toc_depth: 2\nheader-includes:\n- \\usepackage{apacite}\n- \\bibliographystyle{apacite}\nbibliography: references.bib\n---\nNote that I’ve added a new section header-includes: and in it, I’ve told knit to load the \\(\\LaTeX\\) package apacite for APA citations, and told it to use APA bibliographic style. I’ve also added a section bibliography: to tell it what file has my references, in Bibtex format."
+    "text": "Citations\nTo use citations and automatically generate a Works Cited at the end of the document, you can change your YAML like this. This isn’t the only approach, but this is what I’ve used.1\n---\ntitle: \"My Sample Markdown Document\"\nauthor: \"Eeyore Namehere\"\ndate: \"`r Sys.Date()`\"\noutput:\n  bookdown::html_document2: default\nbibliography: references.bib\n---\nNote that I’ve added a new section header-includes: and in it, I’ve told knit to load the \\(\\LaTeX\\) package apacite for APA citations, and told it to use APA bibliographic style. I’ve also added a section bibliography: to tell it what file has my references, in Bibtex format.\nI need to update this to Chicago citation format to be consistent with Professor Rocca’s Craft of Policy course"
   },
   {
     "objectID": "index.html#citations-1",
@@ -151,7 +179,7 @@
     "href": "index.html#cross-references",
     "title": "Intro to R Markdown",
     "section": "Cross-references",
-    "text": "Cross-references\n\nIn your paper, if you want to have references in your text to specific tables or figures in your documents rather than just “in the figure above”, you’ll need to know how to do cross-references.\nPlain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the bookdown package.\nAfter Bookdown is installed, you’ll have to modify your YAML header to use it.\nCross-referencing will be explained."
+    "text": "Cross-references\n\nIn your paper, if you want to have references in your text to specific tables or figures elsewhere in your document rather than just “in the figure above”, you’ll need to know how to do cross-references.\nPlain vanilla R Markdown can’t do internal cross-references. To do that, we’ll have to install the bookdown package.\nAfter Bookdown is installed, you’ll have to modify your YAML header to use it.\nCross-referencing will be explained."
   },
   {
     "objectID": "index.html#cross-references-1",
@@ -165,21 +193,49 @@
     "href": "index.html#cross-references-2",
     "title": "Intro to R Markdown",
     "section": "Cross-references",
-    "text": "Cross-references\nChanging your YAML header for Bookdown\nEtiam congue quam eget velit convallis, eu sagittis orci vestibulum. Vestibulum at massa turpis. Curabitur ornare ex sed purus vulputate, vitae porta augue rhoncus. Phasellus auctor suscipit purus, vel ultricies nunc. Nunc eleifend nulla ac purus volutpat, id fringilla felis aliquet. Duis vitae porttitor nibh, in rhoncus risus. Vestibulum a est vitae est tristique vehicula. Proin mollis justo id est tempus hendrerit. Praesent suscipit placerat congue. Aliquam eu elit gravida, consequat augue non, ultricies sapien. Nunc ultricies viverra ante, sit amet vehicula ante volutpat id. Etiam tempus purus vitae tellus mollis viverra. Donec at ornare mauris. Aliquam sodales hendrerit ornare. Suspendisse accumsan lacinia sapien, sit amet imperdiet dui molestie ut."
+    "text": "Cross-references\nChanging your YAML header for Bookdown\nTo use bookdown, you need to change your document’s YAML header. Here’s an example of one that works. This is to knit to an HTML document with the output target of bookdown::html_document2, but to knit to an MS-Word document, use bookdown::word_document2 instead."
   },
   {
-    "objectID": "index.html#cross-referencing",
-    "href": "index.html#cross-referencing",
+    "objectID": "index.html#cross-references-3",
+    "href": "index.html#cross-references-3",
     "title": "Intro to R Markdown",
-    "section": "Cross-referencing",
-    "text": "Cross-referencing\nDuis urna urna, pellentesque eu urna ut, malesuada bibendum dolor. Suspendisse potenti. Vivamus ornare, arcu quis molestie ultrices, magna est accumsan augue, auctor vulputate erat quam quis neque. Nullam scelerisque odio vel ultricies facilisis. Ut porta arcu non magna sagittis lacinia. Cras ornare vulputate lectus a tristique. Pellentesque ac arcu congue, rhoncus mi id, dignissim ligula."
+    "section": "Cross-references",
+    "text": "Cross-references\nfigure cross-references\nNames and cross-references to figures are typically used in both the caption to the figure and a cross-reference to a figure in the document text.\n\ndefine a reference in a figure code chunk\n\n\n\n```{r pressure, echo=FALSE, fig.cap='Temp v. Pressure'} plot(pressure) ``` The label “pressure” is the name used for the figure. “Temp v. Pressure” is the text used in the caption.\n\nTo refer to the figure in your text, use the label like this: \\@ref(fig:pressure)"
   },
   {
-    "objectID": "index.html#using-a-wordcount-plugin-to-r-studio-for-word-counts",
-    "href": "index.html#using-a-wordcount-plugin-to-r-studio-for-word-counts",
+    "objectID": "index.html#cross-references-4",
+    "href": "index.html#cross-references-4",
     "title": "Intro to R Markdown",
-    "section": "Using a wordcount plugin to R Studio for word counts",
-    "text": "Using a wordcount plugin to R Studio for word counts\ndemo using this plugin."
+    "section": "Cross-references",
+    "text": "Cross-references\nfigure cross-references\nSource to label, caption, and cross-reference a figure…"
+  },
+  {
+    "objectID": "index.html#cross-references-5",
+    "href": "index.html#cross-references-5",
+    "title": "Intro to R Markdown",
+    "section": "Cross-references",
+    "text": "Cross-references\n\n\nfigure cross-references\n…would be rendered like this."
+  },
+  {
+    "objectID": "index.html#cross-references-6",
+    "href": "index.html#cross-references-6",
+    "title": "Intro to R Markdown",
+    "section": "Cross-references",
+    "text": "Cross-references\ntable cross-references\n\nTable cross-references are a little different. Within a code chunk, you need to render your table using knitr::kable something like this, so you can give it a caption:\n\n\n```{r cars, echo=FALSE} knitr::kable(  summary(cars),  caption = \"This is the summary of the cars table\",  booktabs = TRUE  )  ```  - The cross-references for tables, though, are essentially the same:\n\n\\@ref(tab:cars)"
+  },
+  {
+    "objectID": "index.html#cross-references-7",
+    "href": "index.html#cross-references-7",
+    "title": "Intro to R Markdown",
+    "section": "Cross-references",
+    "text": "Cross-references\ntable cross-references\n\n\nThe source for labeling, captioning, and cross-referencing a table would be something like this…"
+  },
+  {
+    "objectID": "index.html#cross-references-8",
+    "href": "index.html#cross-references-8",
+    "title": "Intro to R Markdown",
+    "section": "Cross-references",
+    "text": "Cross-references\ntable cross-references\n\n\n\n\n…and would be rendered something like this."
   },
   {
     "objectID": "index.html#fine-tuning-your-ms-word-document",
@@ -187,12 +243,5 @@
     "title": "Intro to R Markdown",
     "section": "Fine-tuning your MS-Word document",
     "text": "Fine-tuning your MS-Word document\ndemo"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
